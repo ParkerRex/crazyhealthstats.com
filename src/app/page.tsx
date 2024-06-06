@@ -1,48 +1,54 @@
 
 "use client"
-import React, { useEffect, useState } from "react";
-import LineChartHero from "@/components/LineChart";
-import { parseCSV } from "@/lib/csvParser";
 
-const filePath = '/data/internet_adoption.csv';
+import { useEffect, useState } from 'react';
+import LineChartHero from '../components/LineChartHero';
+import { fetchClientData } from '../utils/fetchData';
 
 export default function Home() {
-  const [chartData, setChartData] = useState([]);
-  const [categories, setCategories] = useState([]);
+  const [internetAdoptionData, setInternetAdoptionData] = useState([]);
+  const [obesityData, setObesityData] = useState([]);
 
   useEffect(() => {
-    const fetchData = async () => {
+    async function fetchData() {
       try {
-        const data = await parseCSV(filePath);
-        const transformedData = {};
-
-        data.forEach((item) => {
-          const { Entity: country, Year: year, 'Number of Internet users': users } = item;
-          if (!transformedData[year]) {
-            transformedData[year] = { date: parseInt(year) };
-          }
-          transformedData[year][country] = parseFloat(users);
-        });
-
-        const formattedData = Object.values(transformedData);
-        const countries = Array.from(new Set(data.map(item => item.Entity)));
-
-        setChartData(formattedData);
-        setCategories(countries);
+        const internetData = await fetchClientData('/data/internet_adoption.json');
+        const obesityData = await fetchClientData('/data/obesity.json');
+        console.log('Internet Adoption Data:', internetData);
+        console.log('Obesity Data:', obesityData);
+        setInternetAdoptionData(internetData);
+        setObesityData(obesityData);
       } catch (error) {
-        console.error("Error parsing CSV data:", error);
+        console.error('Failed to fetch data:', error);
       }
-    };
-
+    }
     fetchData();
   }, []);
 
   return (
-    <main className="container flex flex-col w-screen h-screen">
-      <p>
-        We're going to make a simple data visualization in TypeScript using Tremor so that we can maintain our brand consistency across our investor deck and our product.
-      </p>
-      <LineChartHero data={chartData} categories={categories} legend={false} xAxisLabel="Year" yAxisLabel="Number of Users" />
+    <main className="container mx-auto p-4">
+      <h1 className="text-xl font-bold mb-4">Data Visualization</h1>
+      <section className="mb-8">
+        <LineChartHero
+          data={internetAdoptionData}
+          categories={['internet_adoption_percentage']}
+          legend={true}
+          xAxisLabel="Year"
+          yAxisLabel="Internet Adoption Percentage"
+          title="Internet Adoption Over Years"
+        />
+      </section>
+      <section>
+        <LineChartHero
+          data={obesityData}
+          categories={['obesity_percentage']}
+          legend={true}
+          xAxisLabel="Year"
+          yAxisLabel="Obesity Percentage"
+          title="Obesity Rates Over Years"
+        />
+      </section>
     </main>
   );
 }
+
