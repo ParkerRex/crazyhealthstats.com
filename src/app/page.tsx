@@ -30,19 +30,9 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="container mx-auto p-4">
-      <h1 className="text-xl font-bold mb-4">Data Visualization</h1>
-      <section className="mb-8">
-        <LineChartHero
-          data={internetAdoptionData}
-          lines={[{ key: 'internet_adoption_percentage', color: '#8884d8' }]}
-          legend={true}
-          xAxisLabel="Year"
-          yAxisLabel="Percentage"
-          title="Internet Adoption Over Years"
-        />
-      </section>
-      <section>
+    <main className="container grid grid-cols-2 gap-4 gap-y-4 mx-auto p-4">
+      <div className="flex flex-col">
+        <h1 className="text-xl font-bold">The Bad</h1>
         <LineChartHero
           data={obesityData}
           lines={[{ key: 'obesity_percentage', color: '#82ca9d' }]}
@@ -51,8 +41,6 @@ export default function Home() {
           yAxisLabel="Percentage"
           title="Obesity Rates Over Years"
         />
-      </section>
-      <section>
         <LineChartHero
           data={depressionData}
           lines={[
@@ -64,7 +52,31 @@ export default function Home() {
           yAxisLabel="Percentage"
           title="Depression Rates Over Years"
         />
-      </section>
-    </main>
+      </div >
+      <div>
+        <h1 className="text-xl font-bold mb-4">The Good</h1>
+        <LineChartHero
+          data={internetAdoptionData}
+          lines={[{ key: 'internet_adoption_percentage', color: '#8884d8' }]}
+          legend={true}
+          xAxisLabel="Year"
+          yAxisLabel="Percentage"
+          title="Internet Adoption Over Years"
+        />
+        <h1>cost of compute plummeting</h1>
+        <LineChartHero
+
+          data={internetAdoptionData}
+          lines={[{ key: 'internet_adoption_percentage', color: '#8884d8' }]}
+          legend={true}
+          xAxisLabel="Year"
+          yAxisLabel="Percentage"
+          title="Internet Adoption Over Years"
+        />
+        <h1>effectiveness of ai skyrocketing</h1>
+      </div>
+
+    </main >
+
   );
 }
