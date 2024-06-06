@@ -34,7 +34,7 @@ export default function Home() {
           categories={['internet_adoption_percentage']}
           legend={true}
           xAxisLabel="Year"
-          yAxisLabel="Internet Adoption Percentage"
+          yAxisLabel={null} // Set to null if you don't want any label
           title="Internet Adoption Over Years"
         />
       </section>
@@ -44,11 +44,10 @@ export default function Home() {
           categories={['obesity_percentage']}
           legend={true}
           xAxisLabel="Year"
-          yAxisLabel="Obesity Percentage"
+          yAxisLabel={null} // Set to null if you don't want any label
           title="Obesity Rates Over Years"
         />
       </section>
     </main>
   );
 }
-
