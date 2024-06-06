@@ -1,0 +1,57 @@
+[
+  {
+    "year": 2015,
+    "lifetime_depression_percentage": 19.6,
+    "current_depression_percentage": 10.5
+  },
+  {
+    "year": 2016,
+    "lifetime_depression_percentage": 20.1,
+    "current_depression_percentage": 13.4
+  },
+  {
+    "year": 2017,
+    "lifetime_depression_percentage": 20.7,
+    "current_depression_percentage": 13.6
+  },
+  {
+    "year": 2018,
+    "lifetime_depression_percentage": 22.0,
+    "current_depression_percentage": 13.1
+  },
+  {
+    "year": 2019,
+    "lifetime_depression_percentage": 21.6,
+    "current_depression_percentage": 12.5
+  },
+  {
+    "year": 2020,
+    "lifetime_depression_percentage": 22.9,
+    "current_depression_percentage": 13.8
+  },
+  {
+    "year": 2021,
+    "lifetime_depression_percentage": 25.2,
+    "current_depression_percentage": 13.8
+  },
+  {
+    "year": 2022,
+    "lifetime_depression_percentage": 26.2,
+    "current_depression_percentage": 14.8
+  },
+  {
+    "year": 2023,
+    "lifetime_depression_percentage": 28.6,
+    "current_depression_percentage": 17.8
+  },
+  {
+    "year": 2024,
+    "lifetime_depression_percentage": 26.9,
+    "current_depression_percentage": null
+  },
+  {
+    "year": 2025,
+    "lifetime_depression_percentage": 29.0,
+    "current_depression_percentage": null
+  }
+]
