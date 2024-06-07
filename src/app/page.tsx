@@ -2,9 +2,10 @@
 "use client"
 
 import { useEffect, useState } from 'react';
-import AreaChartHero from '../components/AreaChartHero';  // Changed to AreaChartHero
+import AreaChartHero from '../components/AreaChartHero';
 import { fetchClientData } from '../utils/fetchData';
 import { ModeToggle } from '@/components/ToggleTheme';
+import ObesityCounter from '@/components/obesitycounter';
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
@@ -30,6 +31,8 @@ export default function Home() {
   return (
     <main className="container mx-auto p-4 dark:bg-gray-900">
       <ModeToggle />
+
+      <ObesityCounter />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
           <h1 className="text-xl font-bold text-white">The Bad</h1>
