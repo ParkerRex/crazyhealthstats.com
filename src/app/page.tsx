@@ -68,6 +68,8 @@ export default function Home() {
           />
         </div>
       </div>
+      <p>sources: https://indianexpress.com/article/health-wellness/obesity-lancet-study-india-cause-9188931/#:~:text=The%20report%20showed%20more%20than,1.1%20million%20men%20in%201990.</p>
     </main>
+
   );
 }
