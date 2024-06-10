@@ -30,12 +30,17 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 dark:bg-gray-900">
-      <ModeToggle />
+      <nav className="w-full h-32 flex justify-between">
 
+        <ModeToggle />
+
+        <h1 className="text-4xl font-semibold">⏰ Obesity Clock</h1>
+        <p>by map</p>
+      </nav>
       <ObesityCounter />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
-          <h1 className="text-xl font-bold text-white">The Bad</h1>
+          <h1 className="text-xl font-bold">The Bad</h1>
           <AreaChartHero
             data={obesityData}
             areas={[{ key: 'obesity_percentage', color: '#82ca9d' }]}
