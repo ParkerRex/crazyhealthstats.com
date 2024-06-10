@@ -1,11 +1,13 @@
 
-"use client"
+"use client";
 
 import { useEffect, useState } from 'react';
 import AreaChartHero from '../components/AreaChartHero';
+import BarChartHero from '../components/BarChartHero';
 import { fetchClientData } from '../utils/fetchData';
 import { ModeToggle } from '@/components/ToggleTheme';
 import ObesityCounter from '@/components/obesitycounter';
+import countryObesityJson from "../../public/data/obesity_country_percentage.json";
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
@@ -38,7 +40,14 @@ export default function Home() {
       <ObesityCounter />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
-          <h1 className="text-xl font-bold">The Bad</h1>
+          <BarChartHero
+            data={countryObesityJson}
+            barKey="percentage"
+            barColor="#8884d8"
+            xAxisLabel="Country"
+            yAxisLabel="Obesity Percentage"
+            title="Obesity Rates by Country"
+          />
           <AreaChartHero
             data={obesityData}
             areas={[{ key: 'obesity_percentage', color: '#82ca9d' }]}
@@ -60,7 +69,6 @@ export default function Home() {
           />
         </div>
         <div className="space-y-4">
-          <h1 className="text-xl font-bold text-white mb-4">The Good</h1>
           <AreaChartHero
             data={internetAdoptionData}
             areas={[{ key: 'internet_adoption_percentage', color: '#8884d8' }]}
@@ -73,6 +81,5 @@ export default function Home() {
       </div>
       <p>sources: https://indianexpress.com/article/health-wellness/obesity-lancet-study-india-cause-9188931/#:~:text=The%20report%20showed%20more%20than,1.1%20million%20men%20in%201990.</p>
     </main>
-
   );
 }

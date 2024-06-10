@@ -1,0 +1,802 @@
+[
+  {
+    "name": "American Samoa",
+    "percentage": 70.29
+  },
+  {
+    "name": "Nauru",
+    "percentage": 69.65
+  },
+  {
+    "name": "Tokelau",
+    "percentage": 67.05
+  },
+  {
+    "name": "Cook Islands",
+    "percentage": 66.05
+  },
+  {
+    "name": "Niue",
+    "percentage": 63.71
+  },
+  {
+    "name": "Tonga",
+    "percentage": 63.37
+  },
+  {
+    "name": "Tuvalu",
+    "percentage": 57.73
+  },
+  {
+    "name": "Samoa",
+    "percentage": 52.83
+  },
+  {
+    "name": "French Polynesia",
+    "percentage": 47.02
+  },
+  {
+    "name": "United States",
+    "percentage": 41.64
+  },
+  {
+    "name": "Qatar",
+    "percentage": 40.79
+  },
+  {
+    "name": "Bahamas",
+    "percentage": 39.78
+  },
+  {
+    "name": "Palau",
+    "percentage": 39.10
+  },
+  {
+    "name": "Federated States of Micronesia",
+    "percentage": 39.02
+  },
+  {
+    "name": "Kuwait",
+    "percentage": 38.88
+  },
+  {
+    "name": "Romania",
+    "percentage": 38.34
+  },
+  {
+    "name": "Saudi Arabia",
+    "percentage": 38.13
+  },
+  {
+    "name": "Marshall Islands",
+    "percentage": 38.09
+  },
+  {
+    "name": "Saint Kitts and Nevis",
+    "percentage": 37.59
+  },
+  {
+    "name": "Puerto Rico",
+    "percentage": 36.46
+  },
+  {
+    "name": "Hungary",
+    "percentage": 36.43
+  },
+  {
+    "name": "Kiribati",
+    "percentage": 36.08
+  },
+  {
+    "name": "Malta",
+    "percentage": 36.02
+  },
+  {
+    "name": "Argentina",
+    "percentage": 35.53
+  },
+  {
+    "name": "Croatia",
+    "percentage": 34.80
+  },
+  {
+    "name": "Georgia",
+    "percentage": 34.34
+  },
+  {
+    "name": "Jordan",
+    "percentage": 34.20
+  },
+  {
+    "name": "Chile",
+    "percentage": 34.10
+  },
+  {
+    "name": "Belize",
+    "percentage": 33.62
+  },
+  {
+    "name": "Iraq",
+    "percentage": 33.35
+  },
+  {
+    "name": "New Zealand",
+    "percentage": 32.99
+  },
+  {
+    "name": "Bahrain",
+    "percentage": 32.91
+  },
+  {
+    "name": "Egypt",
+    "percentage": 32.48
+  },
+  {
+    "name": "Mexico",
+    "percentage": 32.22
+  },
+  {
+    "name": "Poland",
+    "percentage": 32.19
+  },
+  {
+    "name": "Australia",
+    "percentage": 32.05
+  },
+  {
+    "name": "Uruguay",
+    "percentage": 31.64
+  },
+  {
+    "name": "Slovakia",
+    "percentage": 31.42
+  },
+  {
+    "name": "Paraguay",
+    "percentage": 30.76
+  },
+  {
+    "name": "Czechia",
+    "percentage": 30.72
+  },
+  {
+    "name": "Ireland",
+    "percentage": 30.70
+  },
+  {
+    "name": "Brunei Darussalam",
+    "percentage": 30.22
+  },
+  {
+    "name": "Greece",
+    "percentage": 30.06
+  },
+  {
+    "name": "Panama",
+    "percentage": 29.88
+  },
+  {
+    "name": "Palestine",
+    "percentage": 29.77
+  },
+  {
+    "name": "Lebanon",
+    "percentage": 29.53
+  },
+  {
+    "name": "North Macedonia",
+    "percentage": 29.11
+  },
+  {
+    "name": "United Arab Emirates",
+    "percentage": 29.02
+  },
+  {
+    "name": "Nicaragua",
+    "percentage": 28.68
+  },
+  {
+    "name": "Canada",
+    "percentage": 28.16
+  },
+  {
+    "name": "Libya",
+    "percentage": 28.08
+  },
+  {
+    "name": "Uzbekistan",
+    "percentage": 27.88
+  },
+  {
+    "name": "Lithuania",
+    "percentage": 27.87
+  },
+  {
+    "name": "Barbados",
+    "percentage": 27.78
+  },
+  {
+    "name": "United Kingdom",
+    "percentage": 26.94
+  },
+  {
+    "name": "Oman",
+    "percentage": 26.79
+  },
+  {
+    "name": "Syrian Arab Republic",
+    "percentage": 26.71
+  },
+  {
+    "name": "Fiji",
+    "percentage": 26.62
+  },
+  {
+    "name": "Serbia",
+    "percentage": 26.44
+  },
+  {
+    "name": "Turkey",
+    "percentage": 26.22
+  },
+  {
+    "name": "Cyprus",
+    "percentage": 26.18
+  },
+  {
+    "name": "Latvia",
+    "percentage": 25.72
+  },
+  {
+    "name": "Slovenia",
+    "percentage": 25.66
+  },
+  {
+    "name": "Costa Rica",
+    "percentage": 25.55
+  },
+  {
+    "name": "Brazil",
+    "percentage": 25.05
+  },
+  {
+    "name": "Kyrgyzstan",
+    "percentage": 24.96
+  },
+  {
+    "name": "Bermuda",
+    "percentage": 24.47
+  },
+  {
+    "name": "Antigua and Barbuda",
+    "percentage": 24.40
+  },
+  {
+    "name": "Greenland",
+    "percentage": 24.37
+  },
+  {
+    "name": "Russian Federation",
+    "percentage": 24.34
+  },
+  {
+    "name": "Bulgaria",
+    "percentage": 24.08
+  },
+  {
+    "name": "Dominican Republic",
+    "percentage": 24.02
+  },
+  {
+    "name": "Israel",
+    "percentage": 23.81
+  },
+  {
+    "name": "Iceland",
+    "percentage": 23.64
+  },
+  {
+    "name": "Peru",
+    "percentage": 23.62
+  },
+  {
+    "name": "Honduras",
+    "percentage": 23.59
+  },
+  {
+    "name": "El Salvador",
+    "percentage": 23.44
+  },
+  {
+    "name": "Bolivia",
+    "percentage": 23.41
+  },
+  {
+    "name": "Estonia",
+    "percentage": 23.37
+  },
+  {
+    "name": "Germany",
+    "percentage": 23.08
+  },
+  {
+    "name": "Ecuador",
+    "percentage": 23.06
+  },
+  {
+    "name": "Trinidad and Tobago",
+    "percentage": 22.99
+  },
+  {
+    "name": "Guatemala",
+    "percentage": 22.62
+  },
+  {
+    "name": "Mongolia",
+    "percentage": 22.46
+  },
+  {
+    "name": "Bosnia and Herzegovina",
+    "percentage": 22.41
+  },
+  {
+    "name": "Albania",
+    "percentage": 22.27
+  },
+  {
+    "name": "Moldova",
+    "percentage": 22.01
+  },
+  {
+    "name": "Portugal",
+    "percentage": 21.97
+  },
+  {
+    "name": "Finland",
+    "percentage": 21.88
+  },
+  {
+    "name": "Montenegro",
+    "percentage": 21.35
+  },
+  {
+    "name": "Andorra",
+    "percentage": 21.06
+  },
+  {
+    "name": "Luxembourg",
+    "percentage": 20.99
+  },
+  {
+    "name": "Norway",
+    "percentage": 20.93
+  },
+  {
+    "name": "Saint Lucia",
+    "percentage": 20.87
+  },
+  {
+    "name": "Venezuela",
+    "percentage": 20.82
+  },
+  {
+    "name": "Ukraine",
+    "percentage": 20.77
+  },
+  {
+    "name": "Seychelles",
+    "percentage": 20.58
+  },
+  {
+    "name": "Tajikistan",
+    "percentage": 20.57
+  },
+  {
+    "name": "Pakistan",
+    "percentage": 20.49
+  },
+  {
+    "name": "Azerbaijan",
+    "percentage": 20.39
+  },
+  {
+    "name": "Belarus",
+    "percentage": 20.13
+  },
+  {
+    "name": "Tunisia",
+    "percentage": 19.92
+  },
+  {
+    "name": "Armenia",
+    "percentage": 19.81
+  },
+  {
+    "name": "Belgium",
+    "percentage": 19.79
+  },
+  {
+    "name": "Suriname",
+    "percentage": 19.67
+  },
+  {
+    "name": "Turkmenistan",
+    "percentage": 19.60
+  },
+  {
+    "name": "Spain",
+    "percentage": 19.39
+  },
+  {
+    "name": "Saint Vincent and the Grenadines",
+    "percentage": 19.23
+  },
+  {
+    "name": "Jamaica",
+    "percentage": 19.21
+  },
+  {
+    "name": "Cuba",
+    "percentage": 19.19
+  },
+  {
+    "name": "Kazakhstan",
+    "percentage": 19.07
+  },
+  {
+    "name": "Grenada",
+    "percentage": 19.06
+  },
+  {
+    "name": "Austria",
+    "percentage": 18.81
+  },
+  {
+    "name": "Colombia",
+    "percentage": 18.58
+  },
+  {
+    "name": "Dominica",
+    "percentage": 18.38
+  },
+  {
+    "name": "Iran",
+    "percentage": 18.26
+  },
+  {
+    "name": "Solomon Islands",
+    "percentage": 18.13
+  },
+  {
+    "name": "Guyana",
+    "percentage": 18.10
+  },
+  {
+    "name": "Italy",
+    "percentage": 17.97
+  },
+  {
+    "name": "Malaysia",
+    "percentage": 17.70
+  },
+  {
+    "name": "Sweden",
+    "percentage": 17.18
+  },
+  {
+    "name": "Vanuatu",
+    "percentage": 17.04
+  },
+  {
+    "name": "Papua New Guinea",
+    "percentage": 16.61
+  },
+  {
+    "name": "Singapore",
+    "percentage": 16.09
+  },
+  {
+    "name": "Algeria",
+    "percentage": 16.03
+  },
+  {
+    "name": "Denmark",
+    "percentage": 15.70
+  },
+  {
+    "name": "Eswatini",
+    "percentage": 15.62
+  },
+  {
+    "name": "Switzerland",
+    "percentage": 15.07
+  },
+  {
+    "name": "Netherlands",
+    "percentage": 15.05
+  },
+  {
+    "name": "Afghanistan",
+    "percentage": 14.88
+  },
+  {
+    "name": "South Africa",
+    "percentage": 14.50
+  },
+  {
+    "name": "Morocco",
+    "percentage": 13.79
+  },
+  {
+    "name": "Maldives",
+    "percentage": 13.23
+  },
+  {
+    "name": "Mauritius",
+    "percentage": 13.07
+  },
+  {
+    "name": "Liberia",
+    "percentage": 13.05
+  },
+  {
+    "name": "Taiwan",
+    "percentage": 12.44
+  },
+  {
+    "name": "Thailand",
+    "percentage": 12.10
+  },
+  {
+    "name": "Sudan",
+    "percentage": 11.74
+  },
+  {
+    "name": "Gabon",
+    "percentage": 11.41
+  },
+  {
+    "name": "Namibia",
+    "percentage": 10.65
+  },
+  {
+    "name": "Yemen",
+    "percentage": 10.49
+  },
+  {
+    "name": "Mali",
+    "percentage": 10.24
+  },
+  {
+    "name": "France",
+    "percentage": 10.18
+  },
+  {
+    "name": "Sao Tome and Principe",
+    "percentage": 10.06
+  },
+  {
+    "name": "Gambia",
+    "percentage": 9.77
+  },
+  {
+    "name": "Cameroon",
+    "percentage": 9.69
+  },
+  {
+    "name": "Bhutan",
+    "percentage": 9.61
+  },
+  {
+    "name": "Mauritania",
+    "percentage": 9.25
+  },
+  {
+    "name": "China",
+    "percentage": 8.94
+  },
+  {
+    "name": "Lesotho",
+    "percentage": 8.82
+  },
+  {
+    "name": "South Korea",
+    "percentage": 8.82
+  },
+  {
+    "name": "Cabo Verde",
+    "percentage": 8.79
+  },
+  {
+    "name": "Botswana",
+    "percentage": 8.76
+  },
+  {
+    "name": "North Korea",
+    "percentage": 8.65
+  },
+  {
+    "name": "Nigeria",
+    "percentage": 8.52
+  },
+  {
+    "name": "Comoros",
+    "percentage": 8.31
+  },
+  {
+    "name": "Equatorial Guinea",
+    "percentage": 8.08
+  },
+  {
+    "name": "Cote d'Ivoire",
+    "percentage": 7.95
+  },
+  {
+    "name": "Guinea-Bissau",
+    "percentage": 7.86
+  },
+  {
+    "name": "Chad",
+    "percentage": 7.71
+  },
+  {
+    "name": "Japan",
+    "percentage": 7.63
+  },
+  {
+    "name": "Benin",
+    "percentage": 7.41
+  },
+  {
+    "name": "Philippines",
+    "percentage": 7.34
+  },
+  {
+    "name": "Sri Lanka",
+    "percentage": 6.76
+  },
+  {
+    "name": "Haiti",
+    "percentage": 6.73
+  },
+  {
+    "name": "Tanzania",
+    "percentage": 6.73
+  },
+  {
+    "name": "Angola",
+    "percentage": 6.53
+  },
+  {
+    "name": "Indonesia",
+    "percentage": 6.53
+  },
+  {
+    "name": "Mozambique",
+    "percentage": 6.50
+  },
+  {
+    "name": "Burundi",
+    "percentage": 6.36
+  },
+  {
+    "name": "Djibouti",
+    "percentage": 6.35
+  },
+  {
+    "name": "Central African Republic",
+    "percentage": 6.33
+  },
+  {
+    "name": "Kenya",
+    "percentage": 6.32
+  },
+  {
+    "name": "Guinea",
+    "percentage": 6.16
+  },
+  {
+    "name": "Somalia",
+    "percentage": 6.07
+  },
+  {
+    "name": "Laos",
+    "percentage": 6.06
+  },
+  {
+    "name": "Togo",
+    "percentage": 5.88
+  },
+  {
+    "name": "Zimbabwe",
+    "percentage": 5.73
+  },
+  {
+    "name": "Myanmar",
+    "percentage": 5.67
+  },
+  {
+    "name": "India",
+    "percentage": 5.38
+  },
+  {
+    "name": "Ghana",
+    "percentage": 5.37
+  },
+  {
+    "name": "Zambia",
+    "percentage": 5.34
+  },
+  {
+    "name": "South Sudan",
+    "percentage": 5.32
+  },
+  {
+    "name": "Nepal",
+    "percentage": 4.97
+  },
+  {
+    "name": "Madagascar",
+    "percentage": 4.63
+  },
+  {
+    "name": "Niger",
+    "percentage": 4.51
+  },
+  {
+    "name": "Congo",
+    "percentage": 4.38
+  },
+  {
+    "name": "Democratic Republic of Congo",
+    "percentage": 4.38
+  },
+  {
+    "name": "Uganda",
+    "percentage": 4.25
+  },
+  {
+    "name": "Burkina Faso",
+    "percentage": 4.17
+  },
+  {
+    "name": "Senegal",
+    "percentage": 4.06
+  },
+  {
+    "name": "Malawi",
+    "percentage": 3.21
+  },
+  {
+    "name": "Cambodia",
+    "percentage": 3.12
+  },
+  {
+    "name": "Bangladesh",
+    "percentage": 2.97
+  },
+  {
+    "name": "Eritrea",
+    "percentage": 2.93
+  },
+  {
+    "name": "Sierra Leone",
+    "percentage": 2.79
+  },
+  {
+    "name": "Vietnam",
+    "percentage": 1.97
+  },
+  {
+    "name": "Rwanda",
+    "percentage": 1.84
+  },
+  {
+    "name": "Timor-Leste",
+    "percentage": 1.58
+  },
+  {
+    "name": "Ethiopia",
+    "percentage": 1.10
+  }
+]
