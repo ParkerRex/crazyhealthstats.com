@@ -1,127 +1,144 @@
-"use client"
+
+"use client";
+
 import { useState, useEffect } from "react";
-import { Card, CardHeader, CardContent, CardTitle } from "./ui/card";
-import { Badge } from "./ui/badge";
+import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/20/solid';
 
 interface CountryData {
-	country: string;
-	flag: string;
-	population: number;
-	populationGrowthRate: number;
-	obesity: number;
-	obesityGrowthRate: number;
-	directCosts: number; // New property for direct costs related to obesity
+  country: string;
+  population: number;
+  populationGrowthRate: number;
+  obesity: number;
+  obesityGrowthRate: number;
+  directCosts: number;
 }
 
 const countryData: CountryData[] = [
-	{
-		country: "Globe",
-		flag: "🌎",
-		population: 8114492487,
-		populationGrowthRate: 0.0091,
-		obesity: 1000000000,
-		obesityGrowthRate: 0,
-		directCosts: 210000000000
-	},
-
-	{ country: "USA", flag: "🇺🇸", population: 330000000, populationGrowthRate: 0.01, obesity: 160000000, obesityGrowthRate: 0.02, directCosts: 147000000000 },
-	{
-		country: "China",
-		flag: "🇨🇳",
-		population: 1410000000,
-		populationGrowthRate: -0.013,  // Negative growth rate indicating a population decline
-		obesity: 46000000,            // Estimated number of obese individuals
-		obesityGrowthRate: 0.05,      // Assuming a continued increase in obesity rate
-		directCosts: 56000000000      // Hypothetical value for the direct costs of obesity
-	},
-
-
-	{
-		country: "India",
-		flag: "🇮🇳",
-		population: 1420000000,
-		populationGrowthRate: 0.68,    // Positive growth rate indicating a growing population
-		obesity: 46000000,            // Estimated number of obese individuals
-		obesityGrowthRate: 0.052,     // Assuming a continued increase in obesity rate
-		directCosts: 22000000000      // Hypothetical value for the direct costs of obesity
-	},
-	{
-		country: "Japan",
-		flag: "🇯🇵",
-		population: 125000000,
-		populationGrowthRate: 0.0039,  // Low growth rate
-		obesity: 46000000,            // Estimated number of obese individuals
-		obesityGrowthRate: 0.05,      // Assuming a continued increase in obesity rate
-		directCosts: 30000000000      // Hypothetical value for the direct costs of obesity
-	}
+  {
+    country: "Globe",
+    population: 8114492487,
+    populationGrowthRate: 0.0091,
+    obesity: 1000000000,
+    obesityGrowthRate: 0,
+    directCosts: 210000000000
+  },
+  { country: "USA", population: 330000000, populationGrowthRate: 0.01, obesity: 160000000, obesityGrowthRate: 0.02, directCosts: 147000000000 },
+  {
+    country: "China",
+    population: 1410000000,
+    populationGrowthRate: -0.013,
+    obesity: 46000000,
+    obesityGrowthRate: 0.05,
+    directCosts: 56000000000
+  },
+  {
+    country: "India",
+    population: 1420000000,
+    populationGrowthRate: 0.68,
+    obesity: 46000000,
+    obesityGrowthRate: 0.052,
+    directCosts: 22000000000
+  },
+  {
+    country: "Japan",
+    population: 125000000,
+    populationGrowthRate: 0.0039,
+    obesity: 46000000,
+    obesityGrowthRate: 0.05,
+    directCosts: 30000000000
+  }
 ];
 
+function classNames(...classes: string[]) {
+  return classes.filter(Boolean).join(' ');
+}
+
 const ObesityCounter = () => {
-	return (
-		<div className="space-y-2">
-			{countryData.map(data => (
-				<CountryObesityCounter key={data.country} {...data} />
-			))}
-		</div>
-	);
+  return (
+    <div className="space-y-4">
+      {countryData.map((data) => (
+        <CountryObesityCounter key={data.country} {...data} />
+      ))}
+    </div>
+  );
 };
 
 const CountryObesityCounter: React.FC<CountryData> = ({
-	country,
-	flag,
-	population,
-	populationGrowthRate,
-	obesity,
-	obesityGrowthRate,
-	directCosts
+  country,
+  population,
+  populationGrowthRate,
+  obesity,
+  obesityGrowthRate,
+  directCosts
 }) => {
-	const [currentPopulation, setCurrentPopulation] = useState(population);
-	const [currentObesity, setCurrentObesity] = useState(obesity);
+  const [currentPopulation, setCurrentPopulation] = useState(population);
+  const [currentObesity, setCurrentObesity] = useState(obesity);
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentPopulation(prev => prev + (prev * populationGrowthRate / (365 * 24 * 60 * 60)));
-			setCurrentObesity(prev => prev + (prev * obesityGrowthRate / (365 * 24 * 60 * 60)));
-		}, 50); // Update every second
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPopulation(prev => prev + (prev * populationGrowthRate / (365 * 24 * 60 * 60)));
+      setCurrentObesity(prev => prev + (prev * obesityGrowthRate / (365 * 24 * 60 * 60)));
+    }, 1000);
 
-		return () => clearInterval(interval);
-	}, [populationGrowthRate, obesityGrowthRate]);
+    return () => clearInterval(interval);
+  }, [populationGrowthRate, obesityGrowthRate]);
 
-	const populationClass = populationGrowthRate > 0 ? 'text-green-500' : 'text-red-500';
-	const obesityClass = obesityGrowthRate > 0 ? 'text-green-500' : 'text-red-500';
+  const populationClass = populationGrowthRate > 0 ? 'text-green-500' : 'text-red-500';
+  const obesityClass = obesityGrowthRate > 0 ? 'text-green-500' : 'text-red-500';
 
-	return (
-		<Card className="">
-			<CardHeader className="flex flex-col md:flex-row justify-between items-center">
-				<div className="flex items-center space-x-4 w-full md:w-1/4 mb-4 md:mb-0">
-					<p className="font-7xl font-bold">{flag}</p>
-					<p className="font-3xl font-semibold dark:font-white">{country}</p>
-				</div>
-			</CardHeader>
-			<CardContent className="flex flex-col md:flex-row items-center justify-between flex-grow space-y-4 md:space-y-0 md:space-x-8">
-				<div className="flex flex-col items-center">
-					<Badge>Population</Badge>
-					<div className="flex border justify-between rounded-md p-2 items-center space-x-2 w-72">
-						<p className={`text-xl font-bold ${populationClass} w-32 text-center`}>{Math.round(currentPopulation).toLocaleString('en-US')}</p>
-						<Badge variant={populationGrowthRate > 0 ? "positiveGrowth" : "negativeGrowth"}>{(populationGrowthRate * 100).toFixed(2)}%</Badge>
-					</div>
-				</div>
-				<div className="flex flex-col items-center">
-					<Badge>Obesity</Badge>
-					<div className="flex border rounded-md p-2 items-center space-x-2 w-72 justify-between">
-						<p className={`text-xl font-bold ${obesityClass} w-32 text-center`}>{Math.round(currentObesity).toLocaleString('en-US')}</p>
-						<Badge variant={obesityGrowthRate > 0 ? "positiveGrowth" : "negativeGrowth"}>{(obesityGrowthRate * 100).toFixed(2)}%</Badge>
-					</div>
-				</div>
-				<div className="flex flex-col items-center">
-					<Badge>Direct Costs</Badge>
-					<div className="flex border rounded-md p-2 items-center space-x-2 w-64">
-						<p className="text-red-500 text-xl font-bold w-32 text-center">${directCosts.toLocaleString('en-US')}</p>
-					</div>
-				</div>
-			</CardContent>
-		</Card>
-	);
+  return (
+    <div>
+      <h3 className="text-base font-semibold leading-6 text-gray-900">{country}</h3>
+      <dl className="mt-5 grid grid-cols-1 divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-3 md:divide-x md:divide-y-0">
+        <div className="px-4 py-5 sm:p-6">
+          <dt className="text-base font-normal text-gray-900">Population</dt>
+          <dd className="mt-1 flex items-baseline justify-between md:block lg:flex">
+            <div className="flex items-baseline text-2xl font-semibold text-slate-600">
+              {Math.round(currentPopulation).toLocaleString('en-US')}
+              <span className="ml-2 text-sm font-medium text-gray-500">
+                Growth:
+                <span className={classNames(populationGrowthRate > 0 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800', 'inline-flex items-baseline rounded-full px-2.5 py-0.5 text-sm font-medium')}>
+                  {populationGrowthRate > 0 ? (
+                    <ArrowUpIcon className="-ml-1 mr-0.5 h-5 w-5 flex-shrink-0 self-center text-green-500" aria-hidden="true" />
+                  ) : (
+                    <ArrowDownIcon className="-ml-1 mr-0.5 h-5 w-5 flex-shrink-0 self-center text-red-500" aria-hidden="true" />
+                  )}
+                  {(populationGrowthRate * 100).toFixed(2)}%
+                </span>
+              </span>
+            </div>
+          </dd>
+        </div>
+        <div className="px-4 py-5 sm:p-6">
+          <dt className="text-base font-normal text-gray-900">Obesity</dt>
+          <dd className="mt-1 flex items-baseline justify-between md:block lg:flex">
+            <div className="flex items-baseline text-2xl font-semibold text-slate-600">
+              {Math.round(currentObesity).toLocaleString('en-US')}
+              <span className="ml-2 text-sm font-medium text-gray-500">
+                Growth:
+                <span className={classNames(obesityGrowthRate > 0 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800', 'inline-flex items-baseline rounded-full px-2.5 py-0.5 text-sm font-medium')}>
+                  {obesityGrowthRate > 0 ? (
+                    <ArrowUpIcon className="-ml-1 mr-0.5 h-5 w-5 flex-shrink-0 self-center text-green-500" aria-hidden="true" />
+                  ) : (
+                    <ArrowDownIcon className="-ml-1 mr-0.5 h-5 w-5 flex-shrink-0 self-center text-red-500" aria-hidden="true" />
+                  )}
+                  {(obesityGrowthRate * 100).toFixed(2)}%
+                </span>
+              </span>
+            </div>
+          </dd>
+        </div>
+        <div className="px-4 py-5 sm:p-6">
+          <dt className="text-base font-normal text-gray-900">Direct Costs</dt>
+          <dd className="mt-1 flex items-baseline justify-between md:block lg:flex">
+            <div className="flex items-baseline text-2xl font-semibold text-slate-600">
+              ${directCosts.toLocaleString('en-US')}
+            </div>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  );
 };
 
 export default ObesityCounter;

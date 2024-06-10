@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import AreaChartHero from '../components/AreaChartHero';
 import BarChartHero from '../components/BarChartHero';
 import { fetchClientData } from '../utils/fetchData';
-import { ModeToggle } from '@/components/ToggleTheme';
 import ObesityCounter from '@/components/obesitycounter';
 import countryObesityJson from "../../public/data/obesity_country_percentage.json";
 
@@ -32,11 +31,6 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 dark:bg-gray-900">
-      <nav className="w-full p-2 pb-2 flex justify-between border-b">
-        <ModeToggle />
-        <h1 className="text-4xl font-semibold">⏰ Obesity Clock</h1>
-        <p>by map</p>
-      </nav>
       <ObesityCounter />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
