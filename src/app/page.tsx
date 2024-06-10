@@ -30,10 +30,8 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 dark:bg-gray-900">
-      <nav className="w-full h-32 flex justify-between">
-
+      <nav className="w-full p-2 pb-2 flex justify-between border-b">
         <ModeToggle />
-
         <h1 className="text-4xl font-semibold">⏰ Obesity Clock</h1>
         <p>by map</p>
       </nav>

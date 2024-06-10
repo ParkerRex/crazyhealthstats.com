@@ -15,6 +15,17 @@ interface CountryData {
 
 const countryData: CountryData[] = [
 	{
+		country: "Globe",
+		flag: "🌎",
+		population: 8114492487,
+		populationGrowthRate: 0.0091,
+		obesity: 1000000000,
+		obesityGrowthRate: 0,
+		directCosts: 210000000000
+	},
+
+	{ country: "USA", flag: "🇺🇸", population: 330000000, populationGrowthRate: 0.01, obesity: 160000000, obesityGrowthRate: 0.02, directCosts: 147000000000 },
+	{
 		country: "China",
 		flag: "🇨🇳",
 		population: 1410000000,
@@ -24,16 +35,7 @@ const countryData: CountryData[] = [
 		directCosts: 56000000000      // Hypothetical value for the direct costs of obesity
 	},
 
-	{ country: "USA", flag: "🇺🇸", population: 330000000, populationGrowthRate: 0.01, obesity: 160000000, obesityGrowthRate: 0.02, directCosts: 147000000000 },
-	{
-		country: "Globe",
-		flag: "🌎",
-		population: 8114492487,
-		populationGrowthRate: 0.0091,
-		obesity: 1000000000,
-		obesityGrowthRate: 0,
-		directCosts: 210000000000
-	},
+
 	{
 		country: "India",
 		flag: "🇮🇳",
