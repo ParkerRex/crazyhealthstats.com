@@ -7,6 +7,8 @@ import BarChartHero from '../components/BarChartHero';
 import { fetchClientData } from '../utils/fetchData';
 import ObesityCounter from '@/components/obesitycounter';
 import countryObesityJson from "../../public/data/obesity_country_percentage.json";
+import Image from 'next/image';
+import { ModeToggle } from '@/components/ToggleTheme';
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
@@ -31,6 +33,11 @@ export default function Home() {
 
   return (
     <main className="container mx-auto p-4 dark:bg-gray-900">
+      <nav className="w-full p-2 pb-2 flex justify-between border-b items-center">
+        <Image alt="logo" src="/logo.png" width={100} height={100} className="size-8" />
+        <h1 className="text-xl font-semibold">The Health Clock</h1>
+        <ModeToggle />
+      </nav>
       <ObesityCounter />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
