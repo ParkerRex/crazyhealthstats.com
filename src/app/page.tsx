@@ -38,7 +38,15 @@ export default function Home() {
         <h1 className="text-xl font-semibold">The Health Clock</h1>
         <ModeToggle />
       </nav>
+
+      <div className="h-6 flex justify-end items-center">
+        <p className="text-gray-400 text-sm">sources</p>
+        <button className="h-4 w-4 bg-gray-400 rounded-full flex justify-center items-center">
+          <a className="text-white" href="https://worldpopulationreview.com/"> 1</a>
+        </button>
+      </div>
       <ObesityCounter />
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
           <BarChartHero

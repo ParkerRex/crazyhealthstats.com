@@ -1,0 +1,1460 @@
+[
+  {
+    "country": "American Samoa",
+    "obesityPercentage": "70.29",
+    "population": 43544,
+    "populationGrowthRate": -0.0084
+  },
+  {
+    "country": "Nauru",
+    "obesityPercentage": "69.65",
+    "population": 12884,
+    "populationGrowthRate": 0.0081
+  },
+  {
+    "country": "Tokelau",
+    "obesityPercentage": "67.05",
+    "population": 1915,
+    "populationGrowthRate": 0.0116
+  },
+  {
+    "country": "Cook Islands",
+    "obesityPercentage": "66.05",
+    "population": 17072,
+    "populationGrowthRate": 0.0016
+  },
+  {
+    "country": "Niue",
+    "obesityPercentage": "63.71",
+    "population": 1935,
+    "populationGrowthRate": 0
+  },
+  {
+    "country": "Tonga",
+    "obesityPercentage": "63.37",
+    "population": 108683,
+    "populationGrowthRate": 0.0084
+  },
+  {
+    "country": "Tuvalu",
+    "obesityPercentage": "57.73",
+    "population": 11478,
+    "populationGrowthRate": 0.0072
+  },
+  {
+    "country": "Samoa",
+    "obesityPercentage": "52.83",
+    "population": 228966,
+    "populationGrowthRate": 0.0146
+  },
+  {
+    "country": "French Polynesia",
+    "obesityPercentage": "47.02",
+    "population": 311383,
+    "populationGrowthRate": 0.0081
+  },
+  {
+    "country": "United States",
+    "obesityPercentage": "41.64",
+    "population": 341814420,
+    "populationGrowthRate": 0.0053
+  },
+  {
+    "country": "Qatar",
+    "obesityPercentage": "40.79",
+    "population": 2737061,
+    "populationGrowthRate": 0.0076
+  },
+  {
+    "country": "Bahamas",
+    "obesityPercentage": "39.78",
+    "population": 415223,
+    "populationGrowthRate": 0.0063
+  },
+  {
+    "country": "Palau",
+    "obesityPercentage": "39.10",
+    "population": 18051,
+    "populationGrowthRate": -0.0004
+  },
+  {
+    "country": "Federated States of Micronesia",
+    "obesityPercentage": "39.02",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Kuwait",
+    "obesityPercentage": "38.88",
+    "population": 4349380,
+    "populationGrowthRate": 0.0091
+  },
+  {
+    "country": "Romania",
+    "obesityPercentage": "38.34",
+    "population": 19618996,
+    "populationGrowthRate": -0.0138
+  },
+  {
+    "country": "Saudi Arabia",
+    "obesityPercentage": "38.13",
+    "population": 37473929,
+    "populationGrowthRate": 0.0143
+  },
+  {
+    "country": "Marshall Islands",
+    "obesityPercentage": "38.09",
+    "population": 42415,
+    "populationGrowthRate": 0.01
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "obesityPercentage": "37.59",
+    "population": 47847,
+    "populationGrowthRate": 0.0019
+  },
+  {
+    "country": "Puerto Rico",
+    "obesityPercentage": "36.46",
+    "population": 3268802,
+    "populationGrowthRate": 0.0026
+  },
+  {
+    "country": "Hungary",
+    "obesityPercentage": "36.43",
+    "population": 9994993,
+    "populationGrowthRate": -0.0159
+  },
+  {
+    "country": "Kiribati",
+    "obesityPercentage": "36.08",
+    "population": 135763,
+    "populationGrowthRate": 0.0168
+  },
+  {
+    "country": "Malta",
+    "obesityPercentage": "36.02",
+    "population": 536740,
+    "populationGrowthRate": 0.0031
+  },
+  {
+    "country": "Argentina",
+    "obesityPercentage": "35.53",
+    "population": 46057866,
+    "populationGrowthRate": 0.0062
+  },
+  {
+    "country": "Croatia",
+    "obesityPercentage": "34.80",
+    "population": 3986627,
+    "populationGrowthRate": -0.0055
+  },
+  {
+    "country": "Georgia",
+    "obesityPercentage": "34.34",
+    "population": 3717425,
+    "populationGrowthRate": -0.0029
+  },
+  {
+    "country": "Jordan",
+    "obesityPercentage": "34.20",
+    "population": 11384922,
+    "populationGrowthRate": 0.0042
+  },
+  {
+    "country": "Chile",
+    "obesityPercentage": "34.10",
+    "population": 19658839,
+    "populationGrowthRate": 0.0015
+  },
+  {
+    "country": "Belize",
+    "obesityPercentage": "33.62",
+    "population": 416656,
+    "populationGrowthRate": 0.0142
+  },
+  {
+    "country": "Iraq",
+    "obesityPercentage": "33.35",
+    "population": 46523657,
+    "populationGrowthRate": 0.0224
+  },
+  {
+    "country": "New Zealand",
+    "obesityPercentage": "32.99",
+    "population": 5269939,
+    "populationGrowthRate": 0.008
+  },
+  {
+    "country": "Bahrain",
+    "obesityPercentage": "32.91",
+    "population": 1498712,
+    "populationGrowthRate": 0.0089
+  },
+  {
+    "country": "Egypt",
+    "obesityPercentage": "32.48",
+    "population": 114484252,
+    "populationGrowthRate": 0.0157
+  },
+  {
+    "country": "Mexico",
+    "obesityPercentage": "32.22",
+    "population": 129388467,
+    "populationGrowthRate": 0.0073
+  },
+  {
+    "country": "Poland",
+    "obesityPercentage": "32.19",
+    "population": 40221726,
+    "populationGrowthRate": -0.0196
+  },
+  {
+    "country": "Australia",
+    "obesityPercentage": "32.05",
+    "population": 26699482,
+    "populationGrowthRate": 0.0098
+  },
+  {
+    "country": "Uruguay",
+    "obesityPercentage": "31.64",
+    "population": 3423316,
+    "populationGrowthRate": 0.0001
+  },
+  {
+    "country": "Slovakia",
+    "obesityPercentage": "31.42",
+    "population": 5702832,
+    "populationGrowthRate": -0.0159
+  },
+  {
+    "country": "Paraguay",
+    "obesityPercentage": "30.76",
+    "population": 6947270,
+    "populationGrowthRate": 0.0125
+  },
+  {
+    "country": "Czechia",
+    "obesityPercentage": "30.72",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Ireland",
+    "obesityPercentage": "30.70",
+    "population": 5089478,
+    "populationGrowthRate": 0.0064
+  },
+  {
+    "country": "Brunei Darussalam",
+    "obesityPercentage": "30.22",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Greece",
+    "obesityPercentage": "30.06",
+    "population": 10302720,
+    "populationGrowthRate": -0.0037
+  },
+  {
+    "country": "Panama",
+    "obesityPercentage": "29.88",
+    "population": 4527961,
+    "populationGrowthRate": 0.0134
+  },
+  {
+    "country": "Palestine",
+    "obesityPercentage": "29.77",
+    "population": 5494963,
+    "populationGrowthRate": 0.023
+  },
+  {
+    "country": "Lebanon",
+    "obesityPercentage": "29.53",
+    "population": 5219044,
+    "populationGrowthRate": -0.0252
+  },
+  {
+    "country": "North Macedonia",
+    "obesityPercentage": "29.11",
+    "population": 2082706.0000000002,
+    "populationGrowthRate": -0.0014
+  },
+  {
+    "country": "United Arab Emirates",
+    "obesityPercentage": "29.02",
+    "population": 9591853,
+    "populationGrowthRate": 0.0079
+  },
+  {
+    "country": "Nicaragua",
+    "obesityPercentage": "28.68",
+    "population": 7142529,
+    "populationGrowthRate": 0.0137
+  },
+  {
+    "country": "Canada",
+    "obesityPercentage": "28.16",
+    "population": 39107046,
+    "populationGrowthRate": 0.0084
+  },
+  {
+    "country": "Libya",
+    "obesityPercentage": "28.08",
+    "population": 6964197,
+    "populationGrowthRate": 0.011
+  },
+  {
+    "country": "Uzbekistan",
+    "obesityPercentage": "27.88",
+    "population": 35673804,
+    "populationGrowthRate": 0.0145
+  },
+  {
+    "country": "Lithuania",
+    "obesityPercentage": "27.87",
+    "population": 2692798,
+    "populationGrowthRate": -0.0094
+  },
+  {
+    "country": "Barbados",
+    "obesityPercentage": "27.78",
+    "population": 282309,
+    "populationGrowthRate": 0.0011
+  },
+  {
+    "country": "United Kingdom",
+    "obesityPercentage": "26.94",
+    "population": 67961439,
+    "populationGrowthRate": 0.0033
+  },
+  {
+    "country": "Oman",
+    "obesityPercentage": "26.79",
+    "population": 4713553,
+    "populationGrowthRate": 0.0149
+  },
+  {
+    "country": "Syrian Arab Republic",
+    "obesityPercentage": "26.71",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Fiji",
+    "obesityPercentage": "26.62",
+    "population": 943072,
+    "populationGrowthRate": 0.0072
+  },
+  {
+    "country": "Serbia",
+    "obesityPercentage": "26.44",
+    "population": 7097028,
+    "populationGrowthRate": -0.0073
+  },
+  {
+    "country": "Turkey",
+    "obesityPercentage": "26.22",
+    "population": 86260417,
+    "populationGrowthRate": 0.0052
+  },
+  {
+    "country": "Cyprus",
+    "obesityPercentage": "26.18",
+    "population": 1268467,
+    "populationGrowthRate": 0.0066
+  },
+  {
+    "country": "Latvia",
+    "obesityPercentage": "25.72",
+    "population": 1810240,
+    "populationGrowthRate": -0.0109
+  },
+  {
+    "country": "Slovenia",
+    "obesityPercentage": "25.66",
+    "population": 2118965,
+    "populationGrowthRate": -0.0003
+  },
+  {
+    "country": "Costa Rica",
+    "obesityPercentage": "25.55",
+    "population": 5246714,
+    "populationGrowthRate": 0.0066
+  },
+  {
+    "country": "Brazil",
+    "obesityPercentage": "25.05",
+    "population": 217637297,
+    "populationGrowthRate": 0.0056
+  },
+  {
+    "country": "Kyrgyzstan",
+    "obesityPercentage": "24.96",
+    "population": 6839606,
+    "populationGrowthRate": 0.0155
+  },
+  {
+    "country": "Bermuda",
+    "obesityPercentage": "24.47",
+    "population": 63935,
+    "populationGrowthRate": -0.0021
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "obesityPercentage": "24.40",
+    "population": 94816,
+    "populationGrowthRate": 0.0055
+  },
+  {
+    "country": "Greenland",
+    "obesityPercentage": "24.37",
+    "population": 56789,
+    "populationGrowthRate": 0.0026
+  },
+  {
+    "country": "Russian Federation",
+    "obesityPercentage": "24.34",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Bulgaria",
+    "obesityPercentage": "24.08",
+    "population": 6618615,
+    "populationGrowthRate": -0.0103
+  },
+  {
+    "country": "Dominican Republic",
+    "obesityPercentage": "24.02",
+    "population": 11434005,
+    "populationGrowthRate": 0.0089
+  },
+  {
+    "country": "Israel",
+    "obesityPercentage": "23.81",
+    "population": 9311652,
+    "populationGrowthRate": 0.0149
+  },
+  {
+    "country": "Iceland",
+    "obesityPercentage": "23.64",
+    "population": 377689,
+    "populationGrowthRate": 0.0063
+  },
+  {
+    "country": "Peru",
+    "obesityPercentage": "23.62",
+    "population": 34683444,
+    "populationGrowthRate": 0.0096
+  },
+  {
+    "country": "Honduras",
+    "obesityPercentage": "23.59",
+    "population": 10759406,
+    "populationGrowthRate": 0.0156
+  },
+  {
+    "country": "El Salvador",
+    "obesityPercentage": "23.44",
+    "population": 6396289,
+    "populationGrowthRate": 0.0049
+  },
+  {
+    "country": "Bolivia",
+    "obesityPercentage": "23.41",
+    "population": 12567336,
+    "populationGrowthRate": 0.0144
+  },
+  {
+    "country": "Estonia",
+    "obesityPercentage": "23.37",
+    "population": 1319041,
+    "populationGrowthRate": -0.0028
+  },
+  {
+    "country": "Germany",
+    "obesityPercentage": "23.08",
+    "population": 83252474,
+    "populationGrowthRate": -0.0005
+  },
+  {
+    "country": "Ecuador",
+    "obesityPercentage": "23.06",
+    "population": 18377367,
+    "populationGrowthRate": 0.0103
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "obesityPercentage": "22.99",
+    "population": 1538200,
+    "populationGrowthRate": 0.0021
+  },
+  {
+    "country": "Guatemala",
+    "obesityPercentage": "22.62",
+    "population": 18358430,
+    "populationGrowthRate": 0.0147
+  },
+  {
+    "country": "Mongolia",
+    "obesityPercentage": "22.46",
+    "population": 3493629,
+    "populationGrowthRate": 0.0135
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "obesityPercentage": "22.41",
+    "population": 3194378,
+    "populationGrowthRate": -0.0051
+  },
+  {
+    "country": "Albania",
+    "obesityPercentage": "22.27",
+    "population": 2826020,
+    "populationGrowthRate": -0.0023
+  },
+  {
+    "country": "Moldova",
+    "obesityPercentage": "22.01",
+    "population": 3329865,
+    "populationGrowthRate": -0.0309
+  },
+  {
+    "country": "Portugal",
+    "obesityPercentage": "21.97",
+    "population": 10223349,
+    "populationGrowthRate": -0.0024
+  },
+  {
+    "country": "Finland",
+    "obesityPercentage": "21.88",
+    "population": 5549886,
+    "populationGrowthRate": 0.0008
+  },
+  {
+    "country": "Montenegro",
+    "obesityPercentage": "21.35",
+    "population": 626102,
+    "populationGrowthRate": -0.0006
+  },
+  {
+    "country": "Andorra",
+    "obesityPercentage": "21.06",
+    "population": 80341,
+    "populationGrowthRate": 0.0032
+  },
+  {
+    "country": "Luxembourg",
+    "obesityPercentage": "20.99",
+    "population": 661594,
+    "populationGrowthRate": 0.0104
+  },
+  {
+    "country": "Norway",
+    "obesityPercentage": "20.93",
+    "population": 5514477,
+    "populationGrowthRate": 0.0073
+  },
+  {
+    "country": "Saint Lucia",
+    "obesityPercentage": "20.87",
+    "population": 180805,
+    "populationGrowthRate": 0.0031
+  },
+  {
+    "country": "Venezuela",
+    "obesityPercentage": "20.82",
+    "population": 29395334,
+    "populationGrowthRate": 0.0193
+  },
+  {
+    "country": "Ukraine",
+    "obesityPercentage": "20.77",
+    "population": 37937821,
+    "populationGrowthRate": 0.0325
+  },
+  {
+    "country": "Seychelles",
+    "obesityPercentage": "20.58",
+    "population": 108263,
+    "populationGrowthRate": 0.0056
+  },
+  {
+    "country": "Tajikistan",
+    "obesityPercentage": "20.57",
+    "population": 10331513,
+    "populationGrowthRate": 0.0185
+  },
+  {
+    "country": "Pakistan",
+    "obesityPercentage": "20.49",
+    "population": 245209815,
+    "populationGrowthRate": 0.0196
+  },
+  {
+    "country": "Azerbaijan",
+    "obesityPercentage": "20.39",
+    "population": 10462904,
+    "populationGrowthRate": 0.0048
+  },
+  {
+    "country": "Belarus",
+    "obesityPercentage": "20.13",
+    "population": 9455037,
+    "populationGrowthRate": -0.0045
+  },
+  {
+    "country": "Tunisia",
+    "obesityPercentage": "19.92",
+    "population": 12564689,
+    "populationGrowthRate": 0.0085
+  },
+  {
+    "country": "Armenia",
+    "obesityPercentage": "19.81",
+    "population": 2777979,
+    "populationGrowthRate": 0
+  },
+  {
+    "country": "Belgium",
+    "obesityPercentage": "19.79",
+    "population": 11715774,
+    "populationGrowthRate": 0.0025
+  },
+  {
+    "country": "Suriname",
+    "obesityPercentage": "19.67",
+    "population": 628785,
+    "populationGrowthRate": 0.0089
+  },
+  {
+    "country": "Turkmenistan",
+    "obesityPercentage": "19.60",
+    "population": 6598071,
+    "populationGrowthRate": 0.0126
+  },
+  {
+    "country": "Spain",
+    "obesityPercentage": "19.39",
+    "population": 47473373,
+    "populationGrowthRate": -0.001
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "obesityPercentage": "19.23",
+    "population": 103683,
+    "populationGrowthRate": -0.0001
+  },
+  {
+    "country": "Jamaica",
+    "obesityPercentage": "19.21",
+    "population": 2824738,
+    "populationGrowthRate": -0.0003
+  },
+  {
+    "country": "Cuba",
+    "obesityPercentage": "19.19",
+    "population": 11174587,
+    "populationGrowthRate": -0.0018
+  },
+  {
+    "country": "Kazakhstan",
+    "obesityPercentage": "19.07",
+    "population": 19828165,
+    "populationGrowthRate": 0.0113
+  },
+  {
+    "country": "Grenada",
+    "obesityPercentage": "19.06",
+    "population": 126887,
+    "populationGrowthRate": 0.0056
+  },
+  {
+    "country": "Austria",
+    "obesityPercentage": "18.81",
+    "population": 8977139,
+    "populationGrowthRate": 0.002
+  },
+  {
+    "country": "Colombia",
+    "obesityPercentage": "18.58",
+    "population": 52340774,
+    "populationGrowthRate": 0.0049
+  },
+  {
+    "country": "Dominica",
+    "obesityPercentage": "18.38",
+    "population": 73368,
+    "populationGrowthRate": 0.0045
+  },
+  {
+    "country": "Iran",
+    "obesityPercentage": "18.26",
+    "population": 89809781,
+    "populationGrowthRate": 0.0071
+  },
+  {
+    "country": "Solomon Islands",
+    "obesityPercentage": "18.13",
+    "population": 756673,
+    "populationGrowthRate": 0.0219
+  },
+  {
+    "country": "Guyana",
+    "obesityPercentage": "18.10",
+    "population": 819594,
+    "populationGrowthRate": 0.0071
+  },
+  {
+    "country": "Italy",
+    "obesityPercentage": "17.97",
+    "population": 58697744,
+    "populationGrowthRate": -0.0029
+  },
+  {
+    "country": "Malaysia",
+    "obesityPercentage": "17.70",
+    "population": 34671895,
+    "populationGrowthRate": 0.0106
+  },
+  {
+    "country": "Sweden",
+    "obesityPercentage": "17.18",
+    "population": 10673669,
+    "populationGrowthRate": 0.0058
+  },
+  {
+    "country": "Vanuatu",
+    "obesityPercentage": "17.04",
+    "population": 342325,
+    "populationGrowthRate": 0.0234
+  },
+  {
+    "country": "Papua New Guinea",
+    "obesityPercentage": "16.61",
+    "population": 10515788,
+    "populationGrowthRate": 0.018
+  },
+  {
+    "country": "Singapore",
+    "obesityPercentage": "16.09",
+    "population": 6052709,
+    "populationGrowthRate": 0.0063
+  },
+  {
+    "country": "Algeria",
+    "obesityPercentage": "16.03",
+    "population": 46278751,
+    "populationGrowthRate": 0.0147
+  },
+  {
+    "country": "Denmark",
+    "obesityPercentage": "15.70",
+    "population": 5939695,
+    "populationGrowthRate": 0.0049
+  },
+  {
+    "country": "Eswatini",
+    "obesityPercentage": "15.62",
+    "population": 1222075,
+    "populationGrowthRate": 0.0093
+  },
+  {
+    "country": "Switzerland",
+    "obesityPercentage": "15.07",
+    "population": 8851431,
+    "populationGrowthRate": 0.0062
+  },
+  {
+    "country": "Netherlands",
+    "obesityPercentage": "15.05",
+    "population": 17671125,
+    "populationGrowthRate": 0.003
+  },
+  {
+    "country": "Afghanistan",
+    "obesityPercentage": "14.88",
+    "population": 43372950,
+    "populationGrowthRate": 0.0268
+  },
+  {
+    "country": "South Africa",
+    "obesityPercentage": "14.50",
+    "population": 61020221,
+    "populationGrowthRate": 0.01
+  },
+  {
+    "country": "Morocco",
+    "obesityPercentage": "13.79",
+    "population": 38211459,
+    "populationGrowthRate": 0.0098
+  },
+  {
+    "country": "Maldives",
+    "obesityPercentage": "13.23",
+    "population": 517886.99999999994,
+    "populationGrowthRate": -0.006
+  },
+  {
+    "country": "Mauritius",
+    "obesityPercentage": "13.07",
+    "population": 1301978,
+    "populationGrowthRate": 0.0011
+  },
+  {
+    "country": "Liberia",
+    "obesityPercentage": "13.05",
+    "population": 5536949,
+    "populationGrowthRate": 0.0219
+  },
+  {
+    "country": "Taiwan",
+    "obesityPercentage": "12.44",
+    "population": 23950214,
+    "populationGrowthRate": 0.0011
+  },
+  {
+    "country": "Thailand",
+    "obesityPercentage": "12.10",
+    "population": 71885799,
+    "populationGrowthRate": 0.0012
+  },
+  {
+    "country": "Sudan",
+    "obesityPercentage": "11.74",
+    "population": 49358228,
+    "populationGrowthRate": 0.026
+  },
+  {
+    "country": "Gabon",
+    "obesityPercentage": "11.41",
+    "population": 2484557,
+    "populationGrowthRate": 0.0197
+  },
+  {
+    "country": "Namibia",
+    "obesityPercentage": "10.65",
+    "population": 2645805,
+    "populationGrowthRate": 0.016
+  },
+  {
+    "country": "Yemen",
+    "obesityPercentage": "10.49",
+    "population": 35219853,
+    "populationGrowthRate": 0.0224
+  },
+  {
+    "country": "Mali",
+    "obesityPercentage": "10.24",
+    "population": 24015789,
+    "populationGrowthRate": 0.031
+  },
+  {
+    "country": "France",
+    "obesityPercentage": "10.18",
+    "population": 64881830,
+    "populationGrowthRate": 0.0019
+  },
+  {
+    "country": "Sao Tome and Principe",
+    "obesityPercentage": "10.06",
+    "population": 236381,
+    "populationGrowthRate": 0.0195
+  },
+  {
+    "country": "Gambia",
+    "obesityPercentage": "9.77",
+    "population": 2841803,
+    "populationGrowthRate": 0.0247
+  },
+  {
+    "country": "Cameroon",
+    "obesityPercentage": "9.69",
+    "population": 29394433,
+    "populationGrowthRate": 0.0261
+  },
+  {
+    "country": "Bhutan",
+    "obesityPercentage": "9.61",
+    "population": 792382,
+    "populationGrowthRate": 0.0063
+  },
+  {
+    "country": "Mauritania",
+    "obesityPercentage": "9.25",
+    "population": 4993922,
+    "populationGrowthRate": 0.0269
+  },
+  {
+    "country": "China",
+    "obesityPercentage": "8.94",
+    "population": 1425178782,
+    "populationGrowthRate": -0.0003
+  },
+  {
+    "country": "Lesotho",
+    "obesityPercentage": "8.82",
+    "population": 2356083,
+    "populationGrowthRate": 0.0111
+  },
+  {
+    "country": "South Korea",
+    "obesityPercentage": "8.82",
+    "population": 51741963,
+    "populationGrowthRate": -0.0008
+  },
+  {
+    "country": "Cabo Verde",
+    "obesityPercentage": "8.79",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Botswana",
+    "obesityPercentage": "8.76",
+    "population": 2719694,
+    "populationGrowthRate": 0.0166
+  },
+  {
+    "country": "North Korea",
+    "obesityPercentage": "8.65",
+    "population": 26244582,
+    "populationGrowthRate": 0.0032
+  },
+  {
+    "country": "Nigeria",
+    "obesityPercentage": "8.52",
+    "population": 229152217,
+    "populationGrowthRate": 0.0239
+  },
+  {
+    "country": "Comoros",
+    "obesityPercentage": "8.31",
+    "population": 867605,
+    "populationGrowthRate": 0.0182
+  },
+  {
+    "country": "Equatorial Guinea",
+    "obesityPercentage": "8.08",
+    "population": 1754993,
+    "populationGrowthRate": 0.0235
+  },
+  {
+    "country": "Cote d'Ivoire",
+    "obesityPercentage": "7.95",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Guinea-Bissau",
+    "obesityPercentage": "7.86",
+    "population": 2197149,
+    "populationGrowthRate": 0.0215
+  },
+  {
+    "country": "Chad",
+    "obesityPercentage": "7.71",
+    "population": 18847148,
+    "populationGrowthRate": 0.0311
+  },
+  {
+    "country": "Japan",
+    "obesityPercentage": "7.63",
+    "population": 122631432,
+    "populationGrowthRate": -0.0054
+  },
+  {
+    "country": "Benin",
+    "obesityPercentage": "7.41",
+    "population": 14080072,
+    "populationGrowthRate": 0.0268
+  },
+  {
+    "country": "Philippines",
+    "obesityPercentage": "7.34",
+    "population": 119106224,
+    "populationGrowthRate": 0.0151
+  },
+  {
+    "country": "Sri Lanka",
+    "obesityPercentage": "6.76",
+    "population": 21949268,
+    "populationGrowthRate": 0.0025
+  },
+  {
+    "country": "Haiti",
+    "obesityPercentage": "6.73",
+    "population": 11867030,
+    "populationGrowthRate": 0.0121
+  },
+  {
+    "country": "Tanzania",
+    "obesityPercentage": "6.73",
+    "population": 69419073,
+    "populationGrowthRate": 0.0294
+  },
+  {
+    "country": "Angola",
+    "obesityPercentage": "6.53",
+    "population": 37804634,
+    "populationGrowthRate": 0.0305
+  },
+  {
+    "country": "Indonesia",
+    "obesityPercentage": "6.53",
+    "population": 279798049,
+    "populationGrowthRate": 0.0082
+  },
+  {
+    "country": "Mozambique",
+    "obesityPercentage": "6.50",
+    "population": 34858402,
+    "populationGrowthRate": 0.0284
+  },
+  {
+    "country": "Burundi",
+    "obesityPercentage": "6.36",
+    "population": 13591657,
+    "populationGrowthRate": 0.0267
+  },
+  {
+    "country": "Djibouti",
+    "obesityPercentage": "6.35",
+    "population": 1152329,
+    "populationGrowthRate": 0.014
+  },
+  {
+    "country": "Central African Republic",
+    "obesityPercentage": "6.33",
+    "population": 5915627,
+    "populationGrowthRate": 0.0302
+  },
+  {
+    "country": "Kenya",
+    "obesityPercentage": "6.32",
+    "population": 56203030,
+    "populationGrowthRate": 0.02
+  },
+  {
+    "country": "Guinea",
+    "obesityPercentage": "6.16",
+    "population": 14528770,
+    "populationGrowthRate": 0.0238
+  },
+  {
+    "country": "Somalia",
+    "obesityPercentage": "6.07",
+    "population": 18706922,
+    "populationGrowthRate": 0.0311
+  },
+  {
+    "country": "Laos",
+    "obesityPercentage": "6.06",
+    "population": 7736681,
+    "populationGrowthRate": 0.0135
+  },
+  {
+    "country": "Togo",
+    "obesityPercentage": "5.88",
+    "population": 9260864,
+    "populationGrowthRate": 0.0229
+  },
+  {
+    "country": "Zimbabwe",
+    "obesityPercentage": "5.73",
+    "population": 17020321,
+    "populationGrowthRate": 0.0213
+  },
+  {
+    "country": "Myanmar",
+    "obesityPercentage": "5.67",
+    "population": 54964694,
+    "populationGrowthRate": 0.0071
+  },
+  {
+    "country": "India",
+    "obesityPercentage": "5.38",
+    "population": 1441719852,
+    "populationGrowthRate": 0.0092
+  },
+  {
+    "country": "Ghana",
+    "obesityPercentage": "5.37",
+    "population": 34777522,
+    "populationGrowthRate": 0.0192
+  },
+  {
+    "country": "Zambia",
+    "obesityPercentage": "5.34",
+    "population": 21134695,
+    "populationGrowthRate": 0.0275
+  },
+  {
+    "country": "South Sudan",
+    "obesityPercentage": "5.32",
+    "population": 11277092,
+    "populationGrowthRate": 0.017
+  },
+  {
+    "country": "Nepal",
+    "obesityPercentage": "4.97",
+    "population": 31240315,
+    "populationGrowthRate": 0.0111
+  },
+  {
+    "country": "Madagascar",
+    "obesityPercentage": "4.63",
+    "population": 31056610,
+    "populationGrowthRate": 0.0241
+  },
+  {
+    "country": "Niger",
+    "obesityPercentage": "4.51",
+    "population": 28238972,
+    "populationGrowthRate": 0.0381
+  },
+  {
+    "country": "Congo",
+    "obesityPercentage": "4.38",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Democratic Republic of Congo",
+    "obesityPercentage": "4.38",
+    "population": null,
+    "populationGrowthRate": null
+  },
+  {
+    "country": "Uganda",
+    "obesityPercentage": "4.25",
+    "population": 49924252,
+    "populationGrowthRate": 0.0276
+  },
+  {
+    "country": "Burkina Faso",
+    "obesityPercentage": "4.17",
+    "population": 23840247,
+    "populationGrowthRate": 0.0253
+  },
+  {
+    "country": "Senegal",
+    "obesityPercentage": "4.06",
+    "population": 18221567,
+    "populationGrowthRate": 0.0258
+  },
+  {
+    "country": "Malawi",
+    "obesityPercentage": "3.21",
+    "population": 21475962,
+    "populationGrowthRate": 0.026
+  },
+  {
+    "country": "Cambodia",
+    "obesityPercentage": "3.12",
+    "population": 17121847,
+    "populationGrowthRate": 0.0104
+  },
+  {
+    "country": "Bangladesh",
+    "obesityPercentage": "2.97",
+    "population": 174701211,
+    "populationGrowthRate": 0.0101
+  },
+  {
+    "country": "Eritrea",
+    "obesityPercentage": "2.93",
+    "population": 3817651,
+    "populationGrowthRate": 0.0183
+  },
+  {
+    "country": "Sierra Leone",
+    "obesityPercentage": "2.79",
+    "population": 8977972,
+    "populationGrowthRate": 0.0213
+  },
+  {
+    "country": "Vietnam",
+    "obesityPercentage": "1.97",
+    "population": 99497680,
+    "populationGrowthRate": 0.0065
+  },
+  {
+    "country": "Rwanda",
+    "obesityPercentage": "1.84",
+    "population": 14414910,
+    "populationGrowthRate": 0.0227
+  },
+  {
+    "country": "Timor-Leste",
+    "obesityPercentage": "1.58",
+    "population": 1379883,
+    "populationGrowthRate": 0.0142
+  },
+  {
+    "country": "Ethiopia",
+    "obesityPercentage": "1.10",
+    "population": 129719719,
+    "populationGrowthRate": 0.0252
+  },
+  {
+    "country": "Russia",
+    "obesityPercentage": null,
+    "population": 143957079,
+    "populationGrowthRate": -0.0034
+  },
+  {
+    "country": "DR Congo",
+    "obesityPercentage": null,
+    "population": 105625114,
+    "populationGrowthRate": 0.0329
+  },
+  {
+    "country": "Ivory Coast",
+    "obesityPercentage": null,
+    "population": 29603302,
+    "populationGrowthRate": 0.0253
+  },
+  {
+    "country": "Syria",
+    "obesityPercentage": null,
+    "population": 24348053,
+    "populationGrowthRate": 0.0483
+  },
+  {
+    "country": "Czech Republic",
+    "obesityPercentage": null,
+    "population": 10503734,
+    "populationGrowthRate": 0.0008
+  },
+  {
+    "country": "Hong Kong",
+    "obesityPercentage": null,
+    "population": 7496681,
+    "populationGrowthRate": 0.0007
+  },
+  {
+    "country": "Republic of the Congo",
+    "obesityPercentage": null,
+    "population": 6244547,
+    "populationGrowthRate": 0.0225
+  },
+  {
+    "country": "Reunion",
+    "obesityPercentage": null,
+    "population": 989350,
+    "populationGrowthRate": 0.0077
+  },
+  {
+    "country": "Macau",
+    "obesityPercentage": null,
+    "population": 713082,
+    "populationGrowthRate": 0.0127
+  },
+  {
+    "country": "Cape Verde",
+    "obesityPercentage": null,
+    "population": 604461,
+    "populationGrowthRate": 0.0097
+  },
+  {
+    "country": "Western Sahara",
+    "obesityPercentage": null,
+    "population": 598385,
+    "populationGrowthRate": 0.0189
+  },
+  {
+    "country": "Brunei",
+    "obesityPercentage": null,
+    "population": 455858,
+    "populationGrowthRate": 0.0074
+  },
+  {
+    "country": "Guadeloupe",
+    "obesityPercentage": null,
+    "population": 396346,
+    "populationGrowthRate": 0.0013
+  },
+  {
+    "country": "Martinique",
+    "obesityPercentage": null,
+    "population": 366416,
+    "populationGrowthRate": -0.0015
+  },
+  {
+    "country": "Mayotte",
+    "obesityPercentage": null,
+    "population": 345996,
+    "populationGrowthRate": 0.0298
+  },
+  {
+    "country": "French Guiana",
+    "obesityPercentage": null,
+    "population": 319796,
+    "populationGrowthRate": 0.0245
+  },
+  {
+    "country": "New Caledonia",
+    "obesityPercentage": null,
+    "population": 295966,
+    "populationGrowthRate": 0.0102
+  },
+  {
+    "country": "Curacao",
+    "obesityPercentage": null,
+    "population": 192965,
+    "populationGrowthRate": 0.0046
+  },
+  {
+    "country": "Guam",
+    "obesityPercentage": null,
+    "population": 174114,
+    "populationGrowthRate": 0.0067
+  },
+  {
+    "country": "Micronesia",
+    "obesityPercentage": null,
+    "population": 116300,
+    "populationGrowthRate": 0.0093
+  },
+  {
+    "country": "Jersey",
+    "obesityPercentage": null,
+    "population": 112843,
+    "populationGrowthRate": 0.0093
+  },
+  {
+    "country": "Aruba",
+    "obesityPercentage": null,
+    "population": 106177,
+    "populationGrowthRate": -0.0009
+  },
+  {
+    "country": "United States Virgin Islands",
+    "obesityPercentage": null,
+    "population": 98055,
+    "populationGrowthRate": -0.007
+  },
+  {
+    "country": "Isle of Man",
+    "obesityPercentage": null,
+    "population": 84904,
+    "populationGrowthRate": 0.0023
+  },
+  {
+    "country": "Cayman Islands",
+    "obesityPercentage": null,
+    "population": 69885,
+    "populationGrowthRate": 0.0083
+  },
+  {
+    "country": "Guernsey",
+    "obesityPercentage": null,
+    "population": 63788,
+    "populationGrowthRate": 0.0038
+  },
+  {
+    "country": "Faroe Islands",
+    "obesityPercentage": null,
+    "population": 53444,
+    "populationGrowthRate": 0.0033
+  },
+  {
+    "country": "Northern Mariana Islands",
+    "obesityPercentage": null,
+    "population": 50025,
+    "populationGrowthRate": 0.0046
+  },
+  {
+    "country": "Turks and Caicos Islands",
+    "obesityPercentage": null,
+    "population": 46431,
+    "populationGrowthRate": 0.008
+  },
+  {
+    "country": "Sint Maarten",
+    "obesityPercentage": null,
+    "population": 44309,
+    "populationGrowthRate": 0.002
+  },
+  {
+    "country": "Liechtenstein",
+    "obesityPercentage": null,
+    "population": 39822,
+    "populationGrowthRate": 0.006
+  },
+  {
+    "country": "Monaco",
+    "obesityPercentage": null,
+    "population": 36157,
+    "populationGrowthRate": -0.0039
+  },
+  {
+    "country": "San Marino",
+    "obesityPercentage": null,
+    "population": 33614,
+    "populationGrowthRate": -0.0008
+  },
+  {
+    "country": "Gibraltar",
+    "obesityPercentage": null,
+    "population": 32718.000000000004,
+    "populationGrowthRate": 0.0009
+  },
+  {
+    "country": "Saint Martin",
+    "obesityPercentage": null,
+    "population": 32337.000000000004,
+    "populationGrowthRate": 0.0081
+  },
+  {
+    "country": "British Virgin Islands",
+    "obesityPercentage": null,
+    "population": 31763,
+    "populationGrowthRate": 0.0071
+  },
+  {
+    "country": "Anguilla",
+    "obesityPercentage": null,
+    "population": 15936,
+    "populationGrowthRate": 0.0023
+  },
+  {
+    "country": "Wallis and Futuna",
+    "obesityPercentage": null,
+    "population": 11439,
+    "populationGrowthRate": -0.0055
+  },
+  {
+    "country": "Saint Barthelemy",
+    "obesityPercentage": null,
+    "population": 11019,
+    "populationGrowthRate": 0.0023
+  },
+  {
+    "country": "Saint Pierre and Miquelon",
+    "obesityPercentage": null,
+    "population": 5815,
+    "populationGrowthRate": -0.0043
+  },
+  {
+    "country": "Montserrat",
+    "obesityPercentage": null,
+    "population": 4372,
+    "populationGrowthRate": -0.0032
+  },
+  {
+    "country": "Falkland Islands",
+    "obesityPercentage": null,
+    "population": 3803,
+    "populationGrowthRate": 0.0032
+  },
+  {
+    "country": "Vatican City",
+    "obesityPercentage": null,
+    "population": 764,
+    "populationGrowthRate": 0
+  }
+]
