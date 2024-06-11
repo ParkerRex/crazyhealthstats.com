@@ -1,6 +1,7 @@
 
 "use client";
 import { CountryData, columns } from "../components/columns"
+import { Button } from "../components/ui/button"
 import { useEffect, useState } from 'react';
 import AreaChartHero from '../components/AreaChartHero';
 import BarChartHero from '../components/BarChartHero';
@@ -10,6 +11,8 @@ import Image from 'next/image';
 import { ModeToggle } from '@/components/ToggleTheme';
 import { DataTable } from '@/components/data-table';
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
+import { QuoteIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
@@ -42,25 +45,42 @@ export default function Home() {
         <h1 className="text-xl font-semibold">The Health Clock</h1>
         <ModeToggle />
       </nav>
-      <div className="h-6 flex justify-end items-center">
+
+      {/* Alert Section */}
+      <div className="my-4">
+        <Alert>
+          <QuoteIcon className="h-4 w-4" />
+          <AlertTitle>$4 Trillion</AlertTitle>
+          <AlertDescription>The World Obesity Federation estimates that the global economic impact of obesity will surpass $4 trillion by 2035.</AlertDescription>
+        </Alert>
+      </div>
+
+      {/* Sources Popover */}
+      <div className="mb-4 flex justify-end">
         <Popover>
-          <PopoverTrigger>
-            ?
+          <PopoverTrigger asChild>
+            <Button variant="ghost">?</Button>
           </PopoverTrigger>
           <PopoverContent>
             <p className="text-lg font-bold">Sources:</p>
             <ul>
               <li><a href="https://worldpopulationreview.com/">Population Data</a></li>
+              <li><a href="https://data.worldobesity.org/rankings/">Obesity data</a></li>
               <li><a href="https://indianexpress.com/article/health-wellness/obesity-lancet-study-india-cause-9188931/#:~:text=The%20report%20showed%20more%20than,1.1%20million%20men%20in%201990">India obesity</a></li>
+              <li><a href="https://stop.publichealth.gwu.edu/LFD-oct23#:~:text=Obesity%20continues%20to%20have%20a,surpass%20%244%20trillion%20by%202035.">$4T stat</a></li>
+
             </ul>
           </PopoverContent>
         </Popover>
       </div>
-      <div>
+
+      {/* Data Table Section */}
+      <div className="flex justify-center">
         <DataTable columns={columns} data={countryData} />
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      {/* Charts and Graphs Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <div className="space-y-4">
           <BarChartHero
             data={countryObesityJson}
