@@ -1,19 +1,20 @@
 
 "use client";
-
+import { CountryData, columns } from "../components/columns"
 import { useEffect, useState } from 'react';
 import AreaChartHero from '../components/AreaChartHero';
 import BarChartHero from '../components/BarChartHero';
 import { fetchClientData } from '../utils/fetchData';
-import ObesityCounter from '@/components/obesitycounter';
 import countryObesityJson from "../../public/data/obesity_country_percentage.json";
 import Image from 'next/image';
 import { ModeToggle } from '@/components/ToggleTheme';
+import { DataTable } from '@/components/data-table';
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
   const [obesityData, setObesityData] = useState([]);
   const [depressionData, setDepressionData] = useState([]);
+  const [countryData, setCountryData] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -21,9 +22,11 @@ export default function Home() {
         const internetData = await fetchClientData('/data/internet_adoption.json');
         const obesityData = await fetchClientData('/data/obesity.json');
         const depressionData = await fetchClientData('/data/depression.json');
+        const countryData = await fetchClientData('/data/combined-data.json');
         setInternetAdoptionData(internetData);
         setObesityData(obesityData);
         setDepressionData(depressionData);
+        setCountryData(countryData);
       } catch (error) {
         console.error('Failed to fetch data:', error);
       }
@@ -45,7 +48,9 @@ export default function Home() {
           <a className="text-white" href="https://worldpopulationreview.com/"> 1</a>
         </button>
       </div>
-      <ObesityCounter />
+      <div>
+        <DataTable columns={columns} data={countryData} />
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <div className="space-y-4">
