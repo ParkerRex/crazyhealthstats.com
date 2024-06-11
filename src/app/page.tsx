@@ -9,6 +9,7 @@ import countryObesityJson from "../../public/data/obesity_country_percentage.jso
 import Image from 'next/image';
 import { ModeToggle } from '@/components/ToggleTheme';
 import { DataTable } from '@/components/data-table';
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
@@ -41,12 +42,19 @@ export default function Home() {
         <h1 className="text-xl font-semibold">The Health Clock</h1>
         <ModeToggle />
       </nav>
-
       <div className="h-6 flex justify-end items-center">
-        <p className="text-gray-400 text-sm">sources</p>
-        <button className="h-4 w-4 bg-gray-400 rounded-full flex justify-center items-center">
-          <a className="text-white" href="https://worldpopulationreview.com/"> 1</a>
-        </button>
+        <Popover>
+          <PopoverTrigger>
+            ?
+          </PopoverTrigger>
+          <PopoverContent>
+            <p className="text-lg font-bold">Sources:</p>
+            <ul>
+              <li><a href="https://worldpopulationreview.com/">Population Data</a></li>
+              <li><a href="https://indianexpress.com/article/health-wellness/obesity-lancet-study-india-cause-9188931/#:~:text=The%20report%20showed%20more%20than,1.1%20million%20men%20in%201990">India obesity</a></li>
+            </ul>
+          </PopoverContent>
+        </Popover>
       </div>
       <div>
         <DataTable columns={columns} data={countryData} />
