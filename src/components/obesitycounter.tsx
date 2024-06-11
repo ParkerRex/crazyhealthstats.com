@@ -3,52 +3,18 @@
 import { useState, useEffect } from "react";
 import { ArrowUpIcon, ArrowDownIcon } from '@heroicons/react/20/solid';
 import { cn } from "@/lib/utils";
+import rawData from "../../public/data/combined-data.json"
+const countryData: CountryData[] = rawData as CountryData[];
+
 
 interface CountryData {
   country: string;
   population: number;
   populationGrowthRate: number;
-  obesity: number;
-  obesityGrowthRate: number;
-  directCosts: number;
+  obesity?: number;
+  obesityGrowthRate?: number;
+  directCosts?: number;
 }
-
-const countryData: CountryData[] = [
-  {
-    country: "Globe",
-    population: 8005176000,
-    populationGrowthRate: 0.0091,
-    obesity: 1000000000,
-    obesityGrowthRate: 0,
-    directCosts: 210000000000
-  },
-  { country: "USA", population: 330000000, populationGrowthRate: 0.01, obesity: 160000000, obesityGrowthRate: 0.02, directCosts: 147000000000 },
-  {
-    country: "China",
-    population: 1425178782,
-    populationGrowthRate: -0.003,
-    obesity: 46000000,
-    obesityGrowthRate: 0.05,
-    directCosts: 56000000000
-  },
-  {
-    country: "India",
-    population: 1441719852,
-    populationGrowthRate: 0.0092,
-    obesity: 46000000,
-    obesityGrowthRate: 0.052,
-    directCosts: 22000000000
-  },
-  {
-    country: "Japan",
-    population: 122631432,
-    populationGrowthRate: -0.0054,
-    obesity: 46000000,
-    obesityGrowthRate: 0.05,
-    directCosts: 30000000000
-  },
-];
-
 
 const ObesityCounter = () => {
   return (
@@ -64,9 +30,9 @@ const CountryObesityCounter: React.FC<CountryData> = ({
   country,
   population,
   populationGrowthRate,
-  obesity,
-  obesityGrowthRate,
-  directCosts
+  obesity = 0,
+  obesityGrowthRate = 0,
+  directCosts = 0 // defaults
 }) => {
   const [currentPopulation, setCurrentPopulation] = useState(population);
   const [currentObesity, setCurrentObesity] = useState(obesity);
@@ -86,7 +52,7 @@ const CountryObesityCounter: React.FC<CountryData> = ({
       <h3 className="text-base font-semibold leading-6 text-gray-900">{country}</h3>
       <dl className="mt-5 grid grid-cols-1 divide-y divide-gray-200 overflow-hidden rounded-lg bg-white shadow md:grid-cols-3 md:divide-x md:divide-y-0">
         <div className="px-4 py-5 sm:p-6">
-          <dt className="text-base font-normal text-gray-900">Population</dt>
+          <dt className="text-base font-normal text-gray-900">Total Population</dt>
           <dd className="mt-1 flex items-baseline justify-between md:block lg:flex">
             <div className="flex items-baseline text-2xl font-semibold text-slate-600">
               {Math.round(currentPopulation).toLocaleString('en-US')}
@@ -102,7 +68,7 @@ const CountryObesityCounter: React.FC<CountryData> = ({
           </dd>
         </div>
         <div className="px-4 py-5 sm:p-6">
-          <dt className="text-base font-normal text-gray-900">Obesity Count</dt>
+          <dt className="text-base font-normal text-gray-900">Obese Population</dt>
           <dd className="mt-1 flex items-baseline justify-between md:block lg:flex">
             <div className="flex items-baseline text-2xl font-semibold text-slate-600">
               {Math.round(currentObesity).toLocaleString('en-US')}
