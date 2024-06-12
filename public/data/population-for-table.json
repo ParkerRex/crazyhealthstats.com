@@ -1,21 +1,21 @@
 [
   {
     "country": "India",
-    "obesityPercentage": "5.38",
+    "obesityPercentage": "19.8",
     "population": 1441719852,
     "populationGrowthRate": 0.0092,
-    "obesitypop": 77564528,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesitypop": 350000000,
+    "obesityGrowthRate": 9.75,
+    "obesityCost": 850000000000
   },
   {
     "country": "China",
-    "obesityPercentage": "8.94",
+    "obesityPercentage": "29.4",
     "population": 1425178782,
     "populationGrowthRate": -0.0003,
     "obesitypop": 127410983,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesityGrowthRate": 5.48,
+    "obesityCost": 10000000000000
   },
   {
     "country": "United States",
@@ -24,7 +24,7 @@
     "populationGrowthRate": 0.0053,
     "obesitypop": 142331524,
     "obesityGrowthRate": 2.1,
-    "obesityCost": 2470000000000
+    "obesityCost": 2500000000000
   },
   {
     "country": "Indonesia",

@@ -13,6 +13,7 @@ import { DataTable } from '@/components/data-table';
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import { QuoteIcon } from "@radix-ui/react-icons";
+import CustomLineChart from "@/components/gdp";
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
@@ -26,7 +27,7 @@ export default function Home() {
         const internetData = await fetchClientData('/data/internet_adoption.json');
         const obesityData = await fetchClientData('/data/obesity.json');
         const depressionData = await fetchClientData('/data/depression.json');
-        const countryData = await fetchClientData('/data/combined-data.json');
+        const countryData = await fetchClientData('/data/population-for-table.json');
         setInternetAdoptionData(internetData);
         setObesityData(obesityData);
         setDepressionData(depressionData);
@@ -41,8 +42,10 @@ export default function Home() {
   return (
     <main className="container mx-auto p-4 dark:bg-gray-900">
       <nav className="w-full p-2 pb-2 flex justify-between border-b items-center">
-        <Image alt="logo" src="/logo.png" width={100} height={100} className="size-8" />
-        <h1 className="text-xl font-semibold">The Health Clock</h1>
+        <div className="flex items-center space-x-2">
+          <Image alt="logo" src="/logo.svg" width={100} height={100} className="size-6" />
+          <p className="font-bold"><span className="text-gray-200">/ {" "}</span>Health Stats</p>
+        </div>
         <ModeToggle />
       </nav>
 
@@ -50,8 +53,8 @@ export default function Home() {
       <div className="my-4">
         <Alert>
           <QuoteIcon className="h-4 w-4" />
-          <AlertTitle>$4 Trillion</AlertTitle>
-          <AlertDescription>The World Obesity Federation estimates that the global economic impact of obesity will surpass $4 trillion by 2035.</AlertDescription>
+          <AlertTitle>Call us out</AlertTitle>
+          <AlertDescription>if the data looks incorrect, shoot us a message!</AlertDescription>
         </Alert>
       </div>
 
@@ -59,11 +62,11 @@ export default function Home() {
       <div className="mb-4 flex justify-end">
         <Popover>
           <PopoverTrigger asChild>
-            <Button variant="ghost">?</Button>
+            <Button variant="ghost">Data sources</Button>
           </PopoverTrigger>
           <PopoverContent>
             <p className="text-lg font-bold">Sources:</p>
-            <ul>
+            <ul className="list-disc">
               <li><a href="https://worldpopulationreview.com/">Population Data</a></li>
               <li><a href="https://data.worldobesity.org/rankings/">Obesity data</a></li>
               <li><a href="https://indianexpress.com/article/health-wellness/obesity-lancet-study-india-cause-9188931/#:~:text=The%20report%20showed%20more%20than,1.1%20million%20men%20in%201990">India obesity</a></li>
@@ -71,7 +74,12 @@ export default function Home() {
               <li><a href="https://obesitymedicine.org/blog/health-economic-impact-of-obesity/">$1.4T economic cost to USA</a></li>
               <li><a href="https://www.statista.com/chart/19621/annual-health-expenditure-per-capita-due-to-obesity/">Expenditure per capita</a></li>
               <li><a href="https://www.statista.com/statistics/1386185/overweight-and-obesity-economic-impact-worldwide-forecasts/">Impact of obesity in USA</a></li>
+              <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10204471/#:~:text=India%2C%20the%20largest%20country%20in,trend%20%5B14%2C15%5D.">India obesity</a></li>
+              <li><a href="https://www.cnn.com/interactive/2017/10/health/i-on-india-childhood-obesity/">India obesity growth rate 1989-2012</a></li>
+              <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10357130/#:~:text=According%20to%20the%202021%20Children's,%25%20in%202022%20%5B4%5D.">China obesity %</a></li>
+              <li><a href="https://www.worldobesity.org/news/economic-cost-of-overweight-and-obesity-set-to-reach-3.3-of-global-gdp-by-2060">Obesity as % of GDP</a></li>
             </ul>
+
           </PopoverContent>
         </Popover>
       </div>
@@ -82,48 +90,47 @@ export default function Home() {
       </div>
 
       {/* Charts and Graphs Section */}
+      <h2 className="text-2xl font-bold">Obesity Quick Facts</h2>
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-        <div className="space-y-4">
-          <BarChartHero
-            data={countryObesityJson}
-            barKey="percentage"
-            barColor="#8884d8"
-            xAxisLabel="Country"
-            yAxisLabel="Obesity Percentage"
-            title="Obesity Rates by Country"
-          />
-          <AreaChartHero
-            data={obesityData}
-            areas={[{ key: 'obesity_percentage', color: '#82ca9d' }]}
-            legend={true}
-            xAxisLabel="Year"
-            yAxisLabel="Percentage"
-            title="Obesity Rates Over Years"
-          />
-          <AreaChartHero
-            data={depressionData}
-            areas={[
-              { key: 'lifetime_depression_percentage', color: '#82ca9d' },
-              { key: 'current_depression_percentage', color: '#8884d8' }
-            ]}
-            legend={true}
-            xAxisLabel="Year"
-            yAxisLabel="Percentage"
-            title="Depression Rates Over Years"
-          />
-        </div>
-        <div className="space-y-4">
-          <AreaChartHero
-            data={internetAdoptionData}
-            areas={[{ key: 'internet_adoption_percentage', color: '#8884d8' }]}
-            legend={true}
-            xAxisLabel="Year"
-            yAxisLabel="Percentage"
-            title="Internet Adoption Over Years"
-          />
-        </div>
+        <CustomLineChart />
+        <BarChartHero
+          data={countryObesityJson}
+          barKey="percentage"
+          barColor="#8884d8"
+          xAxisLabel="Country"
+          yAxisLabel="Obesity Percentage"
+          title="Obesity Rates by Country"
+        />
+        <AreaChartHero
+          data={obesityData}
+          areas={[{ key: 'obesity_percentage', color: '#82ca9d' }]}
+          legend={true}
+          xAxisLabel="Year"
+          yAxisLabel="Percentage"
+          title="Obesity Rates Over Years"
+        />
+        <AreaChartHero
+          data={depressionData}
+          areas={[
+            { key: 'lifetime_depression_percentage', color: '#82ca9d' },
+            { key: 'current_depression_percentage', color: '#8884d8' }
+          ]}
+          legend={true}
+          xAxisLabel="Year"
+          yAxisLabel="Percentage"
+          title="Depression Rates Over Years"
+        />
+        <AreaChartHero
+          data={internetAdoptionData}
+          areas={[{ key: 'internet_adoption_percentage', color: '#8884d8' }]}
+          legend={true}
+          xAxisLabel="Year"
+          yAxisLabel="Percentage"
+          title="Internet Adoption Over Years"
+        />
       </div>
-      <p>sources: https://indianexpress.com/article/health-wellness/obesity-lancet-study-india-cause-9188931/#:~:text=The%20report%20showed%20more%20than,1.1%20million%20men%20in%201990.</p>
     </main>
+
   );
 }
