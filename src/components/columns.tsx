@@ -88,7 +88,7 @@ export const columns: ColumnDef<CountryData>[] = [
       const colorClass = value >= 0 ? 'text-green-500' : 'text-red-500';
       const formattedValue = new Intl.NumberFormat('en-US', {
         style: 'percent',
-        minimumFractionDigits: 4,
+        minimumFractionDigits: 2,
         maximumFractionDigits: 4
       }).format(value);
       return <span className={cn(colorClass)}>{formattedValue}</span>;
