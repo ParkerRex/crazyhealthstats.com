@@ -2,11 +2,9 @@
 
 import { ColumnDef } from "@tanstack/react-table"
 import { Button } from "@/components/ui/button"
-import { ArrowUpDown, MoreHorizontal } from "lucide-react";
-
+import { ArrowUpDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
-
 
 export type CountryData = {
   country: string;
@@ -15,9 +13,8 @@ export type CountryData = {
   obesityPercentage?: number;
   obesitypop?: number;
   obesityGrowthRate?: number;
-  obesityCost?: number; // Ensure this field is included
+  obesityCost?: number;
 }
-
 
 const formatPopulation = (population: number) => {
   return new Intl.NumberFormat("en-US", {
@@ -25,7 +22,6 @@ const formatPopulation = (population: number) => {
     maximumFractionDigits: 0,
   }).format(population);
 };
-
 
 export const columns: ColumnDef<CountryData>[] = [
   {
@@ -61,8 +57,8 @@ export const columns: ColumnDef<CountryData>[] = [
         const startOfYear = new Date(now.getFullYear(), 0, 1);
         const elapsedMs = now.getTime() - startOfYear.getTime();
         const annualChange = row.original.population * row.original.populationGrowthRate;
-        const currentPopulation = row.original.population + (annualChange * (elapsedMs / msPerYear));
-        setPopulation(currentPopulation);
+        const initialPopulation = row.original.population + (annualChange * (elapsedMs / msPerYear));
+        setPopulation(initialPopulation);
 
         const intervalChange = annualChange / (msPerYear / updateInterval);
 
@@ -118,9 +114,9 @@ export const columns: ColumnDef<CountryData>[] = [
         const now = new Date();
         const startOfYear = new Date(now.getFullYear(), 0, 1);
         const elapsedMs = now.getTime() - startOfYear.getTime();
-        const annualChange = (row.original.obesitypop || 0) * (row.original.obesityGrowthRate || 0);
-        const currentObesity = (row.original.obesitypop || 0) + (annualChange * (elapsedMs / msPerYear));
-        setObesity(currentObesity);
+        const annualChange = (row.original.obesitypop || 0) * (row.original.obesityGrowthRate || 0) / 100;
+        const initialObesity = (row.original.obesitypop || 0) + (annualChange * (elapsedMs / msPerYear));
+        setObesity(initialObesity);
 
         const intervalChange = annualChange / (msPerYear / updateInterval);
 

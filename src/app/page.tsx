@@ -1,6 +1,6 @@
 
 "use client";
-import { CountryData, columns } from "../components/columns"
+import { columns } from "../components/columns"
 import { Button } from "../components/ui/button"
 import { useEffect, useState } from 'react';
 import AreaChartHero from '../components/AreaChartHero';
@@ -12,8 +12,9 @@ import { ModeToggle } from '@/components/ToggleTheme';
 import { DataTable } from '@/components/data-table';
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
-import { QuoteIcon } from "@radix-ui/react-icons";
 import CustomLineChart from "@/components/gdp";
+import { Megaphone } from "lucide-react";
+
 
 export default function Home() {
   const [internetAdoptionData, setInternetAdoptionData] = useState([]);
@@ -52,7 +53,7 @@ export default function Home() {
       {/* Alert Section */}
       <div className="my-4">
         <Alert>
-          <QuoteIcon className="h-4 w-4" />
+          <Megaphone className="h-4 w-4" />
           <AlertTitle>Call us out</AlertTitle>
           <AlertDescription>if the data looks incorrect, shoot us a message!</AlertDescription>
         </Alert>
