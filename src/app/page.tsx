@@ -14,6 +14,7 @@ import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert"
 import CustomLineChart from "@/components/gdp";
 import { Megaphone } from "lucide-react";
+import { useTheme } from 'next-themes';
 
 
 export default function Home() {
@@ -21,6 +22,8 @@ export default function Home() {
   const [obesityData, setObesityData] = useState([]);
   const [depressionData, setDepressionData] = useState([]);
   const [countryData, setCountryData] = useState([]);
+  const { theme } = useTheme();
+
 
   useEffect(() => {
     async function fetchData() {
@@ -45,7 +48,13 @@ export default function Home() {
       <nav className="w-full p-2 pb-2 flex justify-between border-b items-center">
         <div className="flex items-center space-x-2">
           <a href="https://mapthemap.com">
-            <Image alt="logo" src="/logo.svg" width={100} height={100} className="size-6" />
+            <Image
+              alt="logo"
+              src={theme === 'dark' ? '/logo-dark.svg' : '/logo.svg'}
+              width={100}
+              height={100}
+              className="size-6"
+            />
           </a>
           <p className="font-bold"><span className="text-gray-200">/ {" "}</span>Health Stats</p>
         </div>
