@@ -31,9 +31,9 @@
     "obesityPercentage": "6.53",
     "population": 279798049,
     "populationGrowthRate": 0.0082,
-    "obesitypop": 18270813,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesitypop": 28000000,
+    "obesityGrowthRate": 5,
+    "obesityCost": 35700000000
   },
   {
     "country": "Pakistan",
@@ -41,8 +41,8 @@
     "population": 245209815,
     "populationGrowthRate": 0.0196,
     "obesitypop": 50243491,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesityGrowthRate": 8,
+    "obesityCost": 376000000
   },
   {
     "country": "Nigeria",

@@ -44,7 +44,9 @@ export default function Home() {
     <main className="container mx-auto p-4 dark:bg-gray-900">
       <nav className="w-full p-2 pb-2 flex justify-between border-b items-center">
         <div className="flex items-center space-x-2">
-          <Image alt="logo" src="/logo.svg" width={100} height={100} className="size-6" />
+          <a href="https://mapthemap.com">
+            <Image alt="logo" src="/logo.svg" width={100} height={100} className="size-6" />
+          </a>
           <p className="font-bold"><span className="text-gray-200">/ {" "}</span>Health Stats</p>
         </div>
         <ModeToggle />
@@ -57,6 +59,11 @@ export default function Home() {
           <AlertTitle>Call us out</AlertTitle>
           <AlertDescription>if the data looks incorrect, shoot us a message!</AlertDescription>
         </Alert>
+      </div>
+
+      {/* Data Table Section */}
+      <div className="flex justify-center">
+        <DataTable columns={columns} data={countryData} />
       </div>
 
       {/* Sources Popover */}
@@ -79,15 +86,11 @@ export default function Home() {
               <li><a href="https://www.cnn.com/interactive/2017/10/health/i-on-india-childhood-obesity/">India obesity growth rate 1989-2012</a></li>
               <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10357130/#:~:text=According%20to%20the%202021%20Children's,%25%20in%202022%20%5B4%5D.">China obesity %</a></li>
               <li><a href="https://www.worldobesity.org/news/economic-cost-of-overweight-and-obesity-set-to-reach-3.3-of-global-gdp-by-2060">Obesity as % of GDP</a></li>
-            </ul>
 
+              <li><a href="https://data.worldobesity.org/publications/WOF-Economic-Impacts-2-V2.pdf">Obesity in Indonesia</a></li>
+            </ul>
           </PopoverContent>
         </Popover>
-      </div>
-
-      {/* Data Table Section */}
-      <div className="flex justify-center">
-        <DataTable columns={columns} data={countryData} />
       </div>
 
       {/* Charts and Graphs Section */}
