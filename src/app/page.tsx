@@ -103,7 +103,7 @@ export default function Home() {
       </div>
 
       {/* Charts and Graphs Section */}
-      <h2 className="text-2xl font-bold">Obesity Quick Facts</h2>
+      <h2 className="text-2xl font-bold">Charts</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
         <CustomLineChart />
@@ -122,25 +122,6 @@ export default function Home() {
           xAxisLabel="Year"
           yAxisLabel="Percentage"
           title="Obesity Rates Over Years"
-        />
-        <AreaChartHero
-          data={depressionData}
-          areas={[
-            { key: 'lifetime_depression_percentage', color: '#82ca9d' },
-            { key: 'current_depression_percentage', color: '#8884d8' }
-          ]}
-          legend={true}
-          xAxisLabel="Year"
-          yAxisLabel="Percentage"
-          title="Depression Rates Over Years"
-        />
-        <AreaChartHero
-          data={internetAdoptionData}
-          areas={[{ key: 'internet_adoption_percentage', color: '#8884d8' }]}
-          legend={true}
-          xAxisLabel="Year"
-          yAxisLabel="Percentage"
-          title="Internet Adoption Over Years"
         />
       </div>
     </main>
