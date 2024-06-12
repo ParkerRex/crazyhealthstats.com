@@ -137,7 +137,7 @@ export const columns: ColumnDef<CountryData>[] = [
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
       >
-        Obesity Growth %
+        Obesity Growth YoY
         <ArrowUpDown className="ml-2 h-4 w-4" />
       </Button>
     ),
