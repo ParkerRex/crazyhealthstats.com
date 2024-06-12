@@ -66,7 +66,7 @@ export default function Home() {
         <Alert>
           <Megaphone className="h-4 w-4" />
           <AlertTitle>Note from Maker</AlertTitle>
-          <AlertDescription>There are complete data sets for the ten most populous countries. The remainders have incomplete data and are TODOS. If the data looks incorrect, <span className="font-semibold"><a target="_blank" href="https://x.com/parkerrex">DM me!{" "}</a></span>I spent a couple hours pulling this together. You can see them in the sources popover below the table. If you're interested in contributing, <span className="font-semibold"><a target="_blank" href="https://github.com/ParkerRex/crazyhealthstats.com">submit a pr!</a></span></AlertDescription>
+          <AlertDescription>There are complete data sets for the ten most populous countries. The remainders have incomplete data and are TODOS. The goal was to get an idea of the scale in our largest countries. If the data looks incorrect, <span className="font-semibold"><a target="_blank" href="https://x.com/parkerrex">DM me!{" "}</a></span>I spent a couple hours pulling this together. You can see them in the sources popover below the table. If you're interested in contributing, <span className="font-semibold"><a target="_blank" href="https://github.com/ParkerRex/crazyhealthstats.com">submit a pr!</a></span></AlertDescription>
         </Alert>
       </div>
 
@@ -92,7 +92,6 @@ export default function Home() {
               <li><a href="https://www.statista.com/chart/19621/annual-health-expenditure-per-capita-due-to-obesity/">Expenditure per capita</a></li>
               <li><a href="https://www.statista.com/statistics/1386185/overweight-and-obesity-economic-impact-worldwide-forecasts/">Impact of obesity in USA</a></li>
               <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10204471/#:~:text=India%2C%20the%20largest%20country%20in,trend%20%5B14%2C15%5D.">India obesity</a></li>
-              <li><a href="https://www.cnn.com/interactive/2017/10/health/i-on-india-childhood-obesity/">India obesity growth rate 1989-2012</a></li>
               <li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10357130/#:~:text=According%20to%20the%202021%20Children's,%25%20in%202022%20%5B4%5D.">China obesity %</a></li>
               <li><a href="https://www.worldobesity.org/news/economic-cost-of-overweight-and-obesity-set-to-reach-3.3-of-global-gdp-by-2060">Obesity as % of GDP</a></li>
 
