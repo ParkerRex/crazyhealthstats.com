@@ -5,7 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider"
 
 export const metadata: Metadata = {
-  title: "Health Clock ",
+  title: "Crazy Health Stats",
   description: "Macro health trends by country",
 };
 
