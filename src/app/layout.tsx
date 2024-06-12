@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react"
 import { GeistSans } from "geist/font/sans"; // import font
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider"
@@ -22,6 +23,7 @@ export default function RootLayout({
         disableTransitionOnChange
       >
         <body>{children}</body>
+        <Analytics />
       </ThemeProvider>
     </html>
 
