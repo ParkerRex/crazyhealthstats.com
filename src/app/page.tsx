@@ -57,7 +57,7 @@ export default function Home() {
         <Alert>
           <Megaphone className="h-4 w-4" />
           <AlertTitle>Call us out</AlertTitle>
-          <AlertDescription>if the data looks incorrect, shoot us a message!</AlertDescription>
+          <AlertDescription>if the data looks incorrect, <span className="font-semibold"><a target="_blank" href="https://x.com/parkerrex">DM me!</a></span>I spent a couple days pulling this from several resources. You can see them in the sources popover below the table. If you're interested in contributing, submit a pr!</AlertDescription>
         </Alert>
       </div>
 

@@ -50,8 +50,8 @@
     "population": 229152217,
     "populationGrowthRate": 0.0239,
     "obesitypop": 19523769,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesityGrowthRate": 6,
+    "obesityCost": 2570000000
   },
   {
     "country": "Brazil",
@@ -59,8 +59,8 @@
     "population": 217637297,
     "populationGrowthRate": 0.0056,
     "obesitypop": 54518143,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesityGrowthRate": 5,
+    "obesityCost": 75000000000
   },
   {
     "country": "Bangladesh",
@@ -68,17 +68,17 @@
     "population": 174701211,
     "populationGrowthRate": 0.0101,
     "obesitypop": 5188626,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesityGrowthRate": 2.2,
+    "obesityCost": 9100000000
   },
   {
     "country": "Russia",
-    "obesityPercentage": null,
+    "obesityPercentage": "24.34",
     "population": 143957079,
     "populationGrowthRate": -0.0034,
-    "obesitypop": null,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesitypop": 2200000,
+    "obesityGrowthRate": 2.3,
+    "obesityCost": 60000000000
   },
   {
     "country": "Ethiopia",
@@ -86,8 +86,8 @@
     "population": 129719719,
     "populationGrowthRate": 0.0252,
     "obesitypop": 1426917,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesityGrowthRate": 5.2,
+    "obesityCost": 2200000000
   },
   {
     "country": "Mexico",
