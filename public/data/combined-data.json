@@ -23,8 +23,8 @@
     "population": 341814420,
     "populationGrowthRate": 0.0053,
     "obesitypop": 142331524,
-    "obesityGrowthRate": 0,
-    "obesityCost": 0
+    "obesityGrowthRate": 2.1,
+    "obesityCost": 2470000000000
   },
   {
     "country": "Indonesia",

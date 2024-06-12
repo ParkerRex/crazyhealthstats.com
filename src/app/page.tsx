@@ -68,7 +68,9 @@ export default function Home() {
               <li><a href="https://data.worldobesity.org/rankings/">Obesity data</a></li>
               <li><a href="https://indianexpress.com/article/health-wellness/obesity-lancet-study-india-cause-9188931/#:~:text=The%20report%20showed%20more%20than,1.1%20million%20men%20in%201990">India obesity</a></li>
               <li><a href="https://stop.publichealth.gwu.edu/LFD-oct23#:~:text=Obesity%20continues%20to%20have%20a,surpass%20%244%20trillion%20by%202035.">$4T stat</a></li>
-
+              <li><a href="https://obesitymedicine.org/blog/health-economic-impact-of-obesity/">$1.4T economic cost to USA</a></li>
+              <li><a href="https://www.statista.com/chart/19621/annual-health-expenditure-per-capita-due-to-obesity/">Expenditure per capita</a></li>
+              <li><a href="https://www.statista.com/statistics/1386185/overweight-and-obesity-economic-impact-worldwide-forecasts/">Impact of obesity in USA</a></li>
             </ul>
           </PopoverContent>
         </Popover>

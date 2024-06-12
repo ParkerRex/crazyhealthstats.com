@@ -4,28 +4,18 @@ import { ColumnDef } from "@tanstack/react-table"
 import { Button } from "@/components/ui/button"
 import { ArrowUpDown, MoreHorizontal } from "lucide-react";
 
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-
 import { cn } from "@/lib/utils";
-import rawData from "../../public/data/combined-data.json"
 import { useEffect, useState } from "react";
-const countryData: CountryData[] = rawData as CountryData[];
 
 
 export type CountryData = {
   country: string;
   population: number;
   populationGrowthRate: number;
-  obesity?: number;
+  obesityPercentage?: number;
+  obesitypop?: number;
   obesityGrowthRate?: number;
-  directCosts?: number;
+  obesityCost?: number; // Ensure this field is included
 }
 
 
@@ -67,9 +57,13 @@ export const columns: ColumnDef<CountryData>[] = [
       useEffect(() => {
         const msPerYear = 31536000000; // milliseconds in a year
         const updateInterval = 500; // update every 500ms
-        // Calculate the total annual change projected
+        const now = new Date();
+        const startOfYear = new Date(now.getFullYear(), 0, 1);
+        const elapsedMs = now.getTime() - startOfYear.getTime();
         const annualChange = row.original.population * row.original.populationGrowthRate;
-        // Calculate change per 500ms
+        const currentPopulation = row.original.population + (annualChange * (elapsedMs / msPerYear));
+        setPopulation(currentPopulation);
+
         const intervalChange = annualChange / (msPerYear / updateInterval);
 
         const timer = setInterval(() => {
@@ -96,15 +90,15 @@ export const columns: ColumnDef<CountryData>[] = [
     cell: ({ getValue }) => {
       const value = getValue() as number;
       const colorClass = value >= 0 ? 'text-green-500' : 'text-red-500';
-      // Update to format the number to show more decimal places
       const formattedValue = new Intl.NumberFormat('en-US', {
-        style: 'decimal',  // Changed from 'percent' to 'decimal' for finer control
-        minimumFractionDigits: 4,  // Ensuring four decimal places
-        maximumFractionDigits: 6  // You can adjust this based on how fine you want the numbers
+        style: 'percent',
+        minimumFractionDigits: 4,
+        maximumFractionDigits: 4
       }).format(value);
       return <span className={cn(colorClass)}>{formattedValue}</span>;
     }
-  }, {
+  },
+  {
     accessorKey: "obesitypop",
     header: ({ column }) => (
       <Button
@@ -115,14 +109,29 @@ export const columns: ColumnDef<CountryData>[] = [
         <ArrowUpDown className="ml-2 h-4 w-4" />
       </Button>
     ),
-    cell: ({ getValue }) => {
-      const population = getValue() as number; // Get the population value
-      const formatted = new Intl.NumberFormat("en-US", {
-        style: "decimal", // Format as decimal
-        maximumFractionDigits: 0, // No decimal places
-      }).format(population); // Format the population number with commas
+    cell: ({ row }) => {
+      const [obesity, setObesity] = useState<number>(row.original.obesitypop || 0);
 
-      return <div className="font-medium">{formatted}</div>;
+      useEffect(() => {
+        const msPerYear = 31536000000; // milliseconds in a year
+        const updateInterval = 500; // update every 500ms
+        const now = new Date();
+        const startOfYear = new Date(now.getFullYear(), 0, 1);
+        const elapsedMs = now.getTime() - startOfYear.getTime();
+        const annualChange = (row.original.obesitypop || 0) * (row.original.obesityGrowthRate || 0);
+        const currentObesity = (row.original.obesitypop || 0) + (annualChange * (elapsedMs / msPerYear));
+        setObesity(currentObesity);
+
+        const intervalChange = annualChange / (msPerYear / updateInterval);
+
+        const timer = setInterval(() => {
+          setObesity(prev => prev + intervalChange);
+        }, updateInterval);
+
+        return () => clearInterval(timer);
+      }, [row.original.obesitypop, row.original.obesityGrowthRate]);
+
+      return <div className="font-medium">{formatPopulation(obesity)}</div>;
     },
   },
   {
@@ -136,7 +145,6 @@ export const columns: ColumnDef<CountryData>[] = [
         <ArrowUpDown className="ml-2 h-4 w-4" />
       </Button>
     ),
-
     cell: ({ getValue }) => {
       const value = getValue() as number;
       const colorClass = value >= 0 ? 'text-green-500' : 'text-red-500';
@@ -151,21 +159,19 @@ export const columns: ColumnDef<CountryData>[] = [
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === "asc")}
       >
-        Obesity Cost
+        Economic impact
         <ArrowUpDown className="ml-2 h-4 w-4" />
       </Button>
     ),
     cell: ({ getValue }) => {
       const cost = getValue() as number;
-      const formatted = new Intl.NumberFormat("en-US", {
+      const formatted = cost ? new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: "USD",
-        maximumFractionDigits: 0, // No decimal places
-      }).format(cost); // Format the population number with commas
+        maximumFractionDigits: 0,
+      }).format(cost) : "$0";
 
       return <div className="font-medium">{formatted}</div>;
     },
   }
-
 ]
-
