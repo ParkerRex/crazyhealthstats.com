@@ -1,6 +1,6 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
+import { Button } from "@/components/ui/button";
 import {
 	ColumnDef,
 	SortingState,
@@ -9,9 +9,9 @@ import {
 	getPaginationRowModel,
 	getSortedRowModel,
 	useReactTable,
-} from "@tanstack/react-table"
-
+} from "@tanstack/react-table";
 import * as React from "react";
+import DataTableSkeleton from "./DataTableSkeleton"; // Adjust the import path
 
 import {
 	Table,
@@ -20,18 +20,28 @@ import {
 	TableHead,
 	TableHeader,
 	TableRow,
-} from "@/components/ui/table"
+} from "@/components/ui/table";
 
 interface DataTableProps<TData, TValue> {
-	columns: ColumnDef<TData, TValue>[]
-	data: TData[]
+	columns: ColumnDef<TData, TValue>[];
+	data: TData[];
 }
 
 export function DataTable<TData, TValue>({
 	columns,
 	data,
 }: DataTableProps<TData, TValue>) {
-	const [sorting, setSorting] = React.useState<SortingState>([])
+	const [sorting, setSorting] = React.useState<SortingState>([]);
+	const [loading, setLoading] = React.useState(true);
+
+	React.useEffect(() => {
+		// Simulate data fetching delay
+		const timer = setTimeout(() => {
+			setLoading(false);
+		}, 1000); // Adjust this delay as needed
+		return () => clearTimeout(timer);
+	}, []);
+
 	const table = useReactTable({
 		data,
 		columns,
@@ -41,8 +51,12 @@ export function DataTable<TData, TValue>({
 		getSortedRowModel: getSortedRowModel(),
 		state: {
 			sorting,
-		}
-	})
+		},
+	});
+
+	if (loading) {
+		return <DataTableSkeleton />;
+	}
 
 	return (
 		<div>
@@ -61,7 +75,7 @@ export function DataTable<TData, TValue>({
 													header.getContext()
 												)}
 										</TableHead>
-									)
+									);
 								})}
 							</TableRow>
 						))}
@@ -109,7 +123,5 @@ export function DataTable<TData, TValue>({
 				</Button>
 			</div>
 		</div>
-
-	)
-
+	);
 }
